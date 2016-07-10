@@ -1,0 +1,1215 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>this.isMounted | React API</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../Events/index.html" />
+    
+    
+    <link rel="prev" href="../../Component/this/context.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="0.4.4.10"
+        data-chapter-title="this.isMounted"
+        data-filepath="Component/this/isMounted.md"
+        data-basepath="../.."
+        data-revision="Sun Jul 10 2016 22:07:09 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        React API
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1" data-path="JSX/index.html">
+            
+                
+                    <a href="../../JSX/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                        JSX
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1.1" data-path="JSX/{}.html">
+            
+                
+                    <a href="../../JSX/{}.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.1.</b>
+                        
+                        {...}
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.2" data-path="JSX/if.html">
+            
+                
+                    <a href="../../JSX/if.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.2.</b>
+                        
+                        条件判断
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.3" data-path="JSX/comment.html">
+            
+                
+                    <a href="../../JSX/comment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.3.</b>
+                        
+                        注释
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.4" data-path="JSX/key.html">
+            
+                
+                    <a href="../../JSX/key.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.4.</b>
+                        
+                        key
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.5" data-path="JSX/ref.html">
+            
+                
+                    <a href="../../JSX/ref.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.5.</b>
+                        
+                        ref
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.6" data-path="JSX/dangerouslySetInnerHTML.html">
+            
+                
+                    <a href="../../JSX/dangerouslySetInnerHTML.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.6.</b>
+                        
+                        dangerouslySetInnerHTML
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.7" data-path="JSX/htmlFor.html">
+            
+                
+                    <a href="../../JSX/htmlFor.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.7.</b>
+                        
+                        htmlFor
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.8" data-path="JSX/className.html">
+            
+                
+                    <a href="../../JSX/className.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.8.</b>
+                        
+                        className
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.9" data-path="JSX/style.html">
+            
+                
+                    <a href="../../JSX/style.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.9.</b>
+                        
+                        style
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.10" data-path="JSX/defaultValue.html">
+            
+                
+                    <a href="../../JSX/defaultValue.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.10.</b>
+                        
+                        defaultValue
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.11" data-path="JSX/defaultChecked.html">
+            
+                
+                    <a href="../../JSX/defaultChecked.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.11.</b>
+                        
+                        defaultChecked
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.12" data-path="JSX/autoFocus.html">
+            
+                
+                    <a href="../../JSX/autoFocus.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.12.</b>
+                        
+                        autoFocus
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2" data-path="React/index.html">
+            
+                
+                    <a href="../../React/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                        React 对象
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.2.1" data-path="React/React.createClass.html">
+            
+                
+                    <a href="../../React/React.createClass.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.1.</b>
+                        
+                        React.createClass()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.2" data-path="React/React.createElement.html">
+            
+                
+                    <a href="../../React/React.createElement.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.2.</b>
+                        
+                        React.createElement()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.3" data-path="React/React.DOM.html">
+            
+                
+                    <a href="../../React/React.DOM.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.3.</b>
+                        
+                        React.DOM
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.4" data-path="React/React.createFactory.html">
+            
+                
+                    <a href="../../React/React.createFactory.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.4.</b>
+                        
+                        React.createFactory()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.5" data-path="React/React.PropTypes.html">
+            
+                
+                    <a href="../../React/React.PropTypes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.5.</b>
+                        
+                        React.PropTypes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.6" data-path="React/React.render.html">
+            
+                
+                    <a href="../../React/React.render.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.6.</b>
+                        
+                        ~~React.render()~~
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.7" data-path="React/React.renderToString.html">
+            
+                
+                    <a href="../../React/React.renderToString.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.7.</b>
+                        
+                        ~~React.renderToString()~~
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.8" data-path="React/React.renderToStaticMarkup.html">
+            
+                
+                    <a href="../../React/React.renderToStaticMarkup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.8.</b>
+                        
+                        ~~React.renderToStaticMarkup()~~
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.9" data-path="React/React.cloneElement.html">
+            
+                
+                    <a href="../../React/React.cloneElement.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.9.</b>
+                        
+                        React.cloneElement()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.10" data-path="React/React.Component.html">
+            
+                
+                    <a href="../../React/React.Component.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.10.</b>
+                        
+                        React.Component
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.11" data-path="React/React.Children.html">
+            
+                
+                    <a href="../../React/React.Children.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.11.</b>
+                        
+                        React.Children
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.12" data-path="React/React.isValidElement.html">
+            
+                
+                    <a href="../../React/React.isValidElement.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.12.</b>
+                        
+                        React.isValidElement()
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3" data-path="ReactDOM/index.html">
+            
+                
+                    <a href="../../ReactDOM/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                        ReactDOM 对象
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.3.1" data-path="ReactDOM/ReactDOM.render.html">
+            
+                
+                    <a href="../../ReactDOM/ReactDOM.render.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.1.</b>
+                        
+                        ReactDOM.render()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.2" data-path="ReactDOM/ReactDOM.findDOMNode.html">
+            
+                
+                    <a href="../../ReactDOM/ReactDOM.findDOMNode.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.2.</b>
+                        
+                        ReactDOM.findDOMNode()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3" data-path="ReactDOM/ReactDOM.unmountComponentAtNode.html">
+            
+                
+                    <a href="../../ReactDOM/ReactDOM.unmountComponentAtNode.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.</b>
+                        
+                        ReactDOM.unmountComponentAtNode()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.4" data-path="ReactDOM/ReactDOMServer.renderToString.html">
+            
+                
+                    <a href="../../ReactDOM/ReactDOMServer.renderToString.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.4.</b>
+                        
+                        ReactDOMServer.renderToString()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.5" data-path="ReactDOM/ReactDOMServer.renderToStaticMarkup.html">
+            
+                
+                    <a href="../../ReactDOM/ReactDOMServer.renderToStaticMarkup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.5.</b>
+                        
+                        ReactDOMServer.renderToStaticMarkup()
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4" data-path="Component/index.html">
+            
+                
+                    <a href="../../Component/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                        Component
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.4.1" data-path="Component/lifecycle.html">
+            
+                
+                    <a href="../../Component/lifecycle.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.</b>
+                        
+                        组件的生命周期
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.4.1.1" data-path="Component/getDefaultProps.html">
+            
+                
+                    <a href="../../Component/getDefaultProps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.1.</b>
+                        
+                        getDefaultProps()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.2" data-path="Component/getInitialState.html">
+            
+                
+                    <a href="../../Component/getInitialState.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.2.</b>
+                        
+                        getInitialState()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.3" data-path="Component/componentWillMount.html">
+            
+                
+                    <a href="../../Component/componentWillMount.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.3.</b>
+                        
+                        componentWillMount()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.4" data-path="Component/render.html">
+            
+                
+                    <a href="../../Component/render.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.4.</b>
+                        
+                        render()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.5" data-path="Component/componentDidMount.html">
+            
+                
+                    <a href="../../Component/componentDidMount.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.5.</b>
+                        
+                        componentDidMount()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.6" >
+            
+            <span><b>0.4.1.6.</b> -</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.7" data-path="Component/componentWillReceiveProps.html">
+            
+                
+                    <a href="../../Component/componentWillReceiveProps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.7.</b>
+                        
+                        componentWillReceiveProps()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.8" data-path="Component/shouldComponentUpdate.html">
+            
+                
+                    <a href="../../Component/shouldComponentUpdate.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.8.</b>
+                        
+                        shouldComponentUpdate()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.9" data-path="Component/componentWillUpdate.html">
+            
+                
+                    <a href="../../Component/componentWillUpdate.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.9.</b>
+                        
+                        componentWillUpdate()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.10" data-path="Component/componentDidUpdate.html">
+            
+                
+                    <a href="../../Component/componentDidUpdate.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.10.</b>
+                        
+                        componentDidUpdate()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.11" >
+            
+            <span><b>0.4.1.11.</b> -</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.12" data-path="Component/componentWillUnmount.html">
+            
+                
+                    <a href="../../Component/componentWillUnmount.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.12.</b>
+                        
+                        componentWillUnmount()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.13" >
+            
+            <span><b>0.4.1.13.</b> -</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.14" data-path="Component/mixins.html">
+            
+                
+                    <a href="../../Component/mixins.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.14.</b>
+                        
+                        mixins
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.15" data-path="Component/propTypes.html">
+            
+                
+                    <a href="../../Component/propTypes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.15.</b>
+                        
+                        propTypes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.16" data-path="Component/defaultProps.html">
+            
+                
+                    <a href="../../Component/defaultProps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.16.</b>
+                        
+                        defaultProps
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.17" data-path="Component/contextTypes.html">
+            
+                
+                    <a href="../../Component/contextTypes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.17.</b>
+                        
+                        contextTypes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.18" data-path="Component/childContextTypes.html">
+            
+                
+                    <a href="../../Component/childContextTypes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.18.</b>
+                        
+                        childContextTypes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.19" data-path="Component/getChildContext.html">
+            
+                
+                    <a href="../../Component/getChildContext.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.19.</b>
+                        
+                        getChildContext()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.1.20" data-path="Component/statics.html">
+            
+                
+                    <a href="../../Component/statics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.20.</b>
+                        
+                        statics
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.2" data-path="Component/setProps.html">
+            
+                
+                    <a href="../../Component/setProps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.2.</b>
+                        
+                        setProps()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.3" data-path="Component/replaceProps.html">
+            
+                
+                    <a href="../../Component/replaceProps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.3.</b>
+                        
+                        replaceProps
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.4" data-path="Component/this/index.html">
+            
+                
+                    <a href="../../Component/this/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.4.</b>
+                        
+                        this
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.4.4.1" data-path="Component/this/forceUpdate.html">
+            
+                
+                    <a href="../../Component/this/forceUpdate.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.4.1.</b>
+                        
+                        this.forceUpdate()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.4.2" data-path="Component/this/props.html">
+            
+                
+                    <a href="../../Component/this/props.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.4.2.</b>
+                        
+                        this.props
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.4.3" data-path="Component/this/props.children.html">
+            
+                
+                    <a href="../../Component/this/props.children.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.4.3.</b>
+                        
+                        this.props.children
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.4.4" data-path="Component/this/state.html">
+            
+                
+                    <a href="../../Component/this/state.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.4.4.</b>
+                        
+                        this.state
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.4.5" data-path="Component/this/setState.html">
+            
+                
+                    <a href="../../Component/this/setState.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.4.5.</b>
+                        
+                        this.setState()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.4.6" data-path="Component/this/replaceState.html">
+            
+                
+                    <a href="../../Component/this/replaceState.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.4.6.</b>
+                        
+                        this.replaceState()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.4.7" data-path="Component/this/refs.html">
+            
+                
+                    <a href="../../Component/this/refs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.4.7.</b>
+                        
+                        this.refs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.4.8" data-path="Component/this/getDOMNode.html">
+            
+                
+                    <a href="../../Component/this/getDOMNode.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.4.8.</b>
+                        
+                        ~~this.getDOMNode()~~
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4.4.9" data-path="Component/this/context.html">
+            
+                
+                    <a href="../../Component/this/context.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.4.9.</b>
+                        
+                        this.context
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="0.4.4.10" data-path="Component/this/isMounted.html">
+            
+                
+                    <a href="../../Component/this/isMounted.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.4.10.</b>
+                        
+                        this.isMounted
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5" data-path="Events/index.html">
+            
+                
+                    <a href="../../Events/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.</b>
+                        
+                        Events
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >React API</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="ismounted">isMounted()</h1>
+<p>&#x7528;&#x6765;&#x5224;&#x65AD;&#x7EC4;&#x4EF6;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x63D2;&#x5165; DOM&#x3002;</p>
+<pre><code class="lang-javascript">...
+handleChange: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.isMounted) {...}
+}
+...
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../Component/this/context.html" class="navigation navigation-prev " aria-label="Previous page: this.context"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../Events/index.html" class="navigation navigation-next " aria-label="Next page: Events"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
