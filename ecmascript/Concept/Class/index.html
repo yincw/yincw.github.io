@@ -1,0 +1,1926 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Class | ECMAScript 6 API 速查手册</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../Concept/Decorator/index.html" />
+    
+    
+    <link rel="prev" href="../../Concept/async/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="0.1.5"
+        data-chapter-title="Class"
+        data-filepath="Concept/Class/README.md"
+        data-basepath="../.."
+        data-revision="Fri Jul 15 2016 13:41:31 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        ECMAScript 6 API 参考手册
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1" data-path="Concept/index.html">
+            
+                
+                    <a href="../../Concept/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                        新语法及概念
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1.1" data-path="Concept/Syntax/index.html">
+            
+                
+                    <a href="../../Concept/Syntax/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.1.</b>
+                        
+                        语法的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.2" data-path="Concept/Iterator/index.html">
+            
+                
+                    <a href="../../Concept/Iterator/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.2.</b>
+                        
+                        Iterator
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1.2.1" >
+            
+            <span><b>0.1.2.1.</b> 4</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.3" data-path="Concept/Generator/index.html">
+            
+                
+                    <a href="../../Concept/Generator/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.3.</b>
+                        
+                        Generator
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1.3.1" >
+            
+            <span><b>0.1.3.1.</b> 5</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.4" data-path="Concept/async/index.html">
+            
+                
+                    <a href="../../Concept/async/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.4.</b>
+                        
+                        async
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1.4.1" >
+            
+            <span><b>0.1.4.1.</b> 6</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="0.1.5" data-path="Concept/Class/index.html">
+            
+                
+                    <a href="../../Concept/Class/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.5.</b>
+                        
+                        Class
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.6" data-path="Concept/Decorator/index.html">
+            
+                
+                    <a href="../../Concept/Decorator/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.6.</b>
+                        
+                        Decorator
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.7" data-path="Concept/Module/index.html">
+            
+                
+                    <a href="../../Concept/Module/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.7.</b>
+                        
+                        Module
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2" data-path="Object/index.html">
+            
+                
+                    <a href="../../Object/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                        Object 类型的扩展
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.2.1" data-path="Object/Object.is.html">
+            
+                
+                    <a href="../../Object/Object.is.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.1.</b>
+                        
+                        Object.is()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.2" data-path="Object/Object.assign.html">
+            
+                
+                    <a href="../../Object/Object.assign.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.2.</b>
+                        
+                        Object.assign()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.3" data-path="Object/Object.setPrototypeOf.html">
+            
+                
+                    <a href="../../Object/Object.setPrototypeOf.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.3.</b>
+                        
+                        Object.setPrototypeOf()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.4" data-path="Object/Object.getPrototypeOf.html">
+            
+                
+                    <a href="../../Object/Object.getPrototypeOf.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.4.</b>
+                        
+                        Object.getPrototypeOf()
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3" data-path="Array/index.html">
+            
+                
+                    <a href="../../Array/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                        Array 类型的扩展
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.3.1" data-path="Array/Array.from.html">
+            
+                
+                    <a href="../../Array/Array.from.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.1.</b>
+                        
+                        Array.from()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.2" data-path="Array/Array.of.html">
+            
+                
+                    <a href="../../Array/Array.of.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.2.</b>
+                        
+                        Array.of()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3" data-path="Array/copyWithin.html">
+            
+                
+                    <a href="../../Array/copyWithin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.</b>
+                        
+                        copyWithin()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.4" data-path="Array/find.html">
+            
+                
+                    <a href="../../Array/find.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.4.</b>
+                        
+                        find()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.5" data-path="Array/findIndex.html">
+            
+                
+                    <a href="../../Array/findIndex.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.5.</b>
+                        
+                        findIndex()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.6" data-path="Array/fill.html">
+            
+                
+                    <a href="../../Array/fill.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.6.</b>
+                        
+                        fill()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.7" data-path="Array/entries.html">
+            
+                
+                    <a href="../../Array/entries.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.7.</b>
+                        
+                        entries()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.8" data-path="Array/keys.html">
+            
+                
+                    <a href="../../Array/keys.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.8.</b>
+                        
+                        keys()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.9" data-path="Array/values.html">
+            
+                
+                    <a href="../../Array/values.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.9.</b>
+                        
+                        values()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.10" data-path="Array/includes.html">
+            
+                
+                    <a href="../../Array/includes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.10.</b>
+                        
+                        includes()
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4" data-path="Function/index.html">
+            
+                
+                    <a href="../../Function/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                        Function 类型的扩展
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.4.1" data-path="Function/name.html">
+            
+                
+                    <a href="../../Function/name.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.</b>
+                        
+                        name
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5" data-path="RegExp/index.html">
+            
+                
+                    <a href="../../RegExp/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.</b>
+                        
+                        RegExp 类型的扩展
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.5.1" data-path="RegExp/sticky.html">
+            
+                
+                    <a href="../../RegExp/sticky.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.1.</b>
+                        
+                        sticky
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5.2" data-path="RegExp/flags.html">
+            
+                
+                    <a href="../../RegExp/flags.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.2.</b>
+                        
+                        flags
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5.3" data-path="RegExp/RegExp.escape.html">
+            
+                
+                    <a href="../../RegExp/RegExp.escape.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.3.</b>
+                        
+                        RegExp.escape()
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6" data-path="Number/index.html">
+            
+                
+                    <a href="../../Number/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.</b>
+                        
+                        Number 类型的扩展
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.6.1" data-path="Number/Number.isFinite.html">
+            
+                
+                    <a href="../../Number/Number.isFinite.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.1.</b>
+                        
+                        Number.isFinite()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.2" data-path="Number/Number.isNaN.html">
+            
+                
+                    <a href="../../Number/Number.isNaN.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.2.</b>
+                        
+                        Number.isNaN()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.3" data-path="Number/Number.parseInt.html">
+            
+                
+                    <a href="../../Number/Number.parseInt.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.3.</b>
+                        
+                        Number.parseInt()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.4" data-path="Number/Number.parseFloat.html">
+            
+                
+                    <a href="../../Number/Number.parseFloat.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.4.</b>
+                        
+                        Number.parseFloat()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.5" data-path="Number/Number.isInteger.html">
+            
+                
+                    <a href="../../Number/Number.isInteger.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.5.</b>
+                        
+                        Number.isInteger()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.6" data-path="Number/Number.EPSILON.html">
+            
+                
+                    <a href="../../Number/Number.EPSILON.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.6.</b>
+                        
+                        Number.EPSILON
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.7" data-path="Number/Number.MAX_SAFE_INTEGER.html">
+            
+                
+                    <a href="../../Number/Number.MAX_SAFE_INTEGER.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.7.</b>
+                        
+                        Number.MAX_SAFE_INTEGER
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.8" data-path="Number/Number.MIN_SAFE_INTEGER.html">
+            
+                
+                    <a href="../../Number/Number.MIN_SAFE_INTEGER.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.8.</b>
+                        
+                        Number.MIN_SAFE_INTEGER
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.9" data-path="Number/Number.isSafeInteger.html">
+            
+                
+                    <a href="../../Number/Number.isSafeInteger.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.9.</b>
+                        
+                        Number.isSafeInteger()
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7" data-path="String/index.html">
+            
+                
+                    <a href="../../String/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.</b>
+                        
+                        String 类型的扩展
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.7.1" data-path="String/codePointAt.html">
+            
+                
+                    <a href="../../String/codePointAt.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.1.</b>
+                        
+                        codePointAt()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.2" data-path="String/String.fromCodePoint.html">
+            
+                
+                    <a href="../../String/String.fromCodePoint.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.2.</b>
+                        
+                        String.fromCodePoint()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.3" data-path="String/at.html">
+            
+                
+                    <a href="../../String/at.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.3.</b>
+                        
+                        at()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.4" data-path="String/normalize.html">
+            
+                
+                    <a href="../../String/normalize.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.4.</b>
+                        
+                        normalize()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.5" data-path="String/includes.html">
+            
+                
+                    <a href="../../String/includes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.5.</b>
+                        
+                        includes()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.6" data-path="String/startsWith.html">
+            
+                
+                    <a href="../../String/startsWith.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.6.</b>
+                        
+                        startsWith()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.7" data-path="String/endsWith.html">
+            
+                
+                    <a href="../../String/endsWith.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.7.</b>
+                        
+                        endsWith()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.8" data-path="String/repeat.html">
+            
+                
+                    <a href="../../String/repeat.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.8.</b>
+                        
+                        repeat()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.9" data-path="String/padStart.html">
+            
+                
+                    <a href="../../String/padStart.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.9.</b>
+                        
+                        padStart()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.10" data-path="String/padEnd.html">
+            
+                
+                    <a href="../../String/padEnd.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.10.</b>
+                        
+                        padEnd()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.11" data-path="String/String.raw.html">
+            
+                
+                    <a href="../../String/String.raw.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.11.</b>
+                        
+                        String.raw()
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8" data-path="Math/index.html">
+            
+                
+                    <a href="../../Math/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.</b>
+                        
+                        Math 对象的扩展
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.8.1" data-path="Math/Math.trunc.html">
+            
+                
+                    <a href="../../Math/Math.trunc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.1.</b>
+                        
+                        Math.trunc()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.2" data-path="Math/Math.sign.html">
+            
+                
+                    <a href="../../Math/Math.sign.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.2.</b>
+                        
+                        Math.sign()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.3" data-path="Math/Math.cbrt.html">
+            
+                
+                    <a href="../../Math/Math.cbrt.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.3.</b>
+                        
+                        Math.cbrt()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.4" data-path="Math/Math.clz32.html">
+            
+                
+                    <a href="../../Math/Math.clz32.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.4.</b>
+                        
+                        Math.clz32()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.5" data-path="Math/Math.imul.html">
+            
+                
+                    <a href="../../Math/Math.imul.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.5.</b>
+                        
+                        Math.imul()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.6" data-path="Math/Math.fround.html">
+            
+                
+                    <a href="../../Math/Math.fround.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.6.</b>
+                        
+                        Math.fround()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.7" data-path="Math/Math.hypot.html">
+            
+                
+                    <a href="../../Math/Math.hypot.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.7.</b>
+                        
+                        Math.hypot()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.8" data-path="Math/Math.expm1.html">
+            
+                
+                    <a href="../../Math/Math.expm1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.8.</b>
+                        
+                        Math.expm1()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.9" data-path="Math/Math.log1p.html">
+            
+                
+                    <a href="../../Math/Math.log1p.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.9.</b>
+                        
+                        Math.log1p()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.10" data-path="Math/Math.log10.html">
+            
+                
+                    <a href="../../Math/Math.log10.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.10.</b>
+                        
+                        Math.log10()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.11" data-path="Math/Math.log2.html">
+            
+                
+                    <a href="../../Math/Math.log2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.11.</b>
+                        
+                        Math.log2()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.12" data-path="Math/Math.sinh.html">
+            
+                
+                    <a href="../../Math/Math.sinh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.12.</b>
+                        
+                        Math.sinh()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.13" data-path="Math/Math.cosh.html">
+            
+                
+                    <a href="../../Math/Math.cosh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.13.</b>
+                        
+                        Math.cosh()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.14" data-path="Math/Math.tanh.html">
+            
+                
+                    <a href="../../Math/Math.tanh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.14.</b>
+                        
+                        Math.tanh()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.15" data-path="Math/Math.asinh.html">
+            
+                
+                    <a href="../../Math/Math.asinh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.15.</b>
+                        
+                        Math.asinh()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.16" data-path="Math/Math.acosh.html">
+            
+                
+                    <a href="../../Math/Math.acosh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.16.</b>
+                        
+                        Math.acosh()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.17" data-path="Math/Math.atanh.html">
+            
+                
+                    <a href="../../Math/Math.atanh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.17.</b>
+                        
+                        Math.atanh()
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9" data-path="Symbol/index.html">
+            
+                
+                    <a href="../../Symbol/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.</b>
+                        
+                        Symbol 类型
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.9.1" >
+            
+            <span><b>0.9.1.</b> 7</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.10" data-path="Proxy/index.html">
+            
+                
+                    <a href="../../Proxy/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.10.</b>
+                        
+                        Proxy 类型
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.10.1" >
+            
+            <span><b>0.10.1.</b> 8</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.11" data-path="Reflect/index.html">
+            
+                
+                    <a href="../../Reflect/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.11.</b>
+                        
+                        Reflect 对象
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.11.1" >
+            
+            <span><b>0.11.1.</b> 9</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.12" data-path="ArrayBuffer/index.html">
+            
+                
+                    <a href="../../ArrayBuffer/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.12.</b>
+                        
+                        ArrayBuffer 类型
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.12.1" >
+            
+            <span><b>0.12.1.</b> 10</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.13" data-path="Set/index.html">
+            
+                
+                    <a href="../../Set/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.13.</b>
+                        
+                        Set 类型
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.13.1" >
+            
+            <span><b>0.13.1.</b> 11</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.14" data-path="Map/index.html">
+            
+                
+                    <a href="../../Map/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.14.</b>
+                        
+                        Map 类型
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.14.1" >
+            
+            <span><b>0.14.1.</b> 12</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15" data-path="Promise/index.html">
+            
+                
+                    <a href="../../Promise/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.</b>
+                        
+                        Promise 类型
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.15.1" >
+            
+            <span><b>0.15.1.</b> 13</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >ECMAScript 6 API 速查手册</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="class">Class</h1>
+<h2 id="class-&#x57FA;&#x672C;&#x7528;&#x6CD5;">Class &#x57FA;&#x672C;&#x7528;&#x6CD5;</h2>
+<blockquote>
+<p>&#x6982;&#x8FF0;</p>
+</blockquote>
+<p>JavaScript &#x8BED;&#x8A00;&#x7684;&#x4F20;&#x7EDF;&#x65B9;&#x6CD5;&#x662F;&#x901A;&#x8FC7;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x5E76;&#x751F;&#x6210;&#x65B0;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Point</span>(<span class="hljs-params">x,y</span>) </span>{
+  <span class="hljs-keyword">this</span>.x = x;
+  <span class="hljs-keyword">this</span>.y = y;
+}
+
+Point.prototype.toString = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;(&apos;</span> + <span class="hljs-keyword">this</span>.x + <span class="hljs-string">&apos;,&apos;</span> + <span class="hljs-keyword">this</span>.y + <span class="hljs-string">&apos;)&apos;</span>;
+}
+</code></pre>
+<p>ES6 &#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x63A5;&#x8FD1;&#x4F20;&#x7EDF;&#x8BED;&#x8A00;&#x7684;&#x5199;&#x6CD5;&#xFF0C;&#x5F15;&#x5165;&#x4E86; Class&#xFF08;&#x7C7B;&#xFF09;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#x4F5C;&#x4E3A;&#x5BF9;&#x8C61;&#x7684;&#x6A21;&#x677F;&#x3002;&#x901A;&#x8FC7; class &#x5173;&#x952E;&#x5B57;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x7C7B;&#x3002;&#x57FA;&#x672C;&#x4E0A;&#xFF0C;ES6 &#x4E2D;&#x7684; class &#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x8BED;&#x6CD5;&#x7CD6;&#xFF0C;&#x5B83;&#x7684;&#x7EDD;&#x5927;&#x90E8;&#x5206;&#x529F;&#x80FD;&#xFF0C;ES5 &#x90FD;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#xFF0C;&#x65B0;&#x7684; class &#x5199;&#x6CD5;&#x53EA;&#x662F;&#x8BA9;&#x5BF9;&#x8C61;&#x539F;&#x578B;&#x7684;&#x5199;&#x6CD5;&#x66F4;&#x52A0;&#x6E05;&#x6670;&#xFF0C;&#x66F4;&#x50CF;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x7684;&#x8BED;&#x6CD5;&#x800C;&#x5DF2;&#x3002;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x7528; ES6 &#x7684; &#x201C;&#x7C7B;&#x201D; &#x6539;&#x5199;&#xFF0C;&#x5C31;&#x662F;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{
+  constructor(x, y) {
+    <span class="hljs-keyword">this</span>.x = x;
+    <span class="hljs-keyword">this</span>.y = y;
+  }
+
+  toString() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;(&apos;</span> + <span class="hljs-keyword">this</span>.x + <span class="hljs-string">&apos;,&apos;</span> + <span class="hljs-keyword">this</span>.y + <span class="hljs-string">&apos;)&apos;</span>;
+  }
+}
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5B9A;&#x4E49; &#x201C;&#x7C7B;&#x201D; &#x7684;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x524D;&#x9762;&#x4E0D;&#x9700;&#x8981;&#x52A0;&#x4E0A; function &#x8FD9;&#x4E2A;&#x4FDD;&#x7559;&#x5B57;&#xFF0C;&#x76F4;&#x63A5;&#x628A;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x653E;&#x8FDB;&#x53BB;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;
+&#x53E6;&#x5916;&#xFF0C;&#x65B9;&#x6CD5;&#x4E4B;&#x95F4;&#x4E0D;&#x9700;&#x8981;&#x9017;&#x53F7;&#x5206;&#x9694;&#xFF0C;&#x52A0;&#x4E86;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
+<p>ES6 &#x7684;&#x7C7B;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x6784;&#x6210;&#x51FD;&#x6570;&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x5199;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{
+  <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-keyword">typeof</span> Point <span class="hljs-comment">// &quot;function&quot;</span>
+Point === Point.prototype.constructor <span class="hljs-comment">// true</span>
+</code></pre>
+<p>&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684; prototype &#x5C5E;&#x6027;&#x5728; ES6 &#x7684; &#x201C;&#x7C7B;&#x201D; &#x4E0A;&#x7EE7;&#x7EED;&#x5B58;&#x5728;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x90FD;&#x5B9A;&#x4E49;&#x5728;&#x7C7B;&#x7684; prototype &#x5C5E;&#x6027;&#x4E0A;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{
+  constructor() {}
+
+  toString() {}
+
+  toValue() {}
+}
+<span class="hljs-comment">// &#x7B49;&#x540C;&#x4E8E;</span>
+Point.prototype = {
+  constructor() {},
+  toString() {},
+  toValue() {}
+}
+</code></pre>
+<p>&#x5728;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x4E0A;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x8C03;&#x7528;&#x539F;&#x578B;&#x4E0A;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#xFF08;&#x9664; constructor &#x4EE5;&#x5916;&#xFF09;&#x90FD;&#x5B9A;&#x4E49;&#x5728; prototype &#x5BF9;&#x8C61;&#x4E0A;&#xFF0C;&#x6240;&#x4EE5;&#x7C7B;&#x7684;&#x65B0;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x5728; prototype &#x5BF9;&#x8C61;&#x4E0A;&#x3002;Object.assign &#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x5730;&#x4E00;&#x6B21;&#x5411;&#x7C7B;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{
+  constructor() {}
+}
+
+<span class="hljs-built_in">Object</span>.assign(Point.prototype, {
+  toString() {},
+  toValue() {}
+})
+</code></pre>
+<p>prototype &#x5BF9;&#x8C61;&#x7684; constructor &#x5C5E;&#x6027;&#x76F4;&#x63A5;&#x6307;&#x5411; &#x201C;&#x7C7B;&#x201D; &#x672C;&#x8EAB;&#xFF0C;&#x8FD9;&#x4E0E; ES5 &#x7684;&#x884C;&#x4E3A;&#x662F;&#x4E00;&#x81F4;&#x7684;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x7C7B;&#x7684;&#x5185;&#x90E8;&#x5B9A;&#x4E49;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x90FD;&#x662F;&#x4E0D;&#x53EF;&#x679A;&#x4E3E;&#x7684;&#xFF08;enumerable&#xFF09;&#x3002;&#x8FD9;&#x4E00;&#x70B9;&#x4E0E; ES5 &#x7684;&#x884C;&#x4E3A;&#x4E0D;&#x4E00;&#x81F4;&#x3002;</p>
+<p>&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> methodName = <span class="hljs-string">&quot;getArea&quot;</span>;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Square</span> </span>{
+  constructor(length) {}
+  [methodName]() {}
+}
+</code></pre>
+<blockquote>
+<p>constructor &#x65B9;&#x6CD5;</p>
+</blockquote>
+<p>constructor &#x65B9;&#x6CD5;&#x662F;&#x7C7B;&#x7684;&#x9ED8;&#x8BA4;&#x65B9;&#x6CD5;&#xFF0C;&#x901A;&#x8FC7; new &#x547D;&#x4EE4;&#x751F;&#x6210;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x3002;&#x4E00;&#x4E2A;&#x7C7B;&#x5FC5;&#x987B;&#x6709; constructor &#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x5B9A;&#x4E49;&#xFF0C;&#x4E00;&#x4E2A;&#x7A7A;&#x7684; constructor &#x65B9;&#x6CD5;&#x4F1A;&#x88AB;&#x9ED8;&#x8BA4;&#x6DFB;&#x52A0;&#x3002;</p>
+<p>constructor &#x65B9;&#x6CD5;&#x9ED8;&#x8BA4;&#x8FD4;&#x56DE;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#xFF08;&#x5373;this&#xFF09;&#xFF0C;&#x4E0D;&#x8FC7;&#x5B8C;&#x6210;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x8FD4;&#x56DE;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+  constructor() {
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Object</span>.create(<span class="hljs-literal">null</span>);
+  }
+}
+
+<span class="hljs-keyword">new</span> Foo() <span class="hljs-keyword">instanceof</span> Foo <span class="hljs-comment">// false</span>
+</code></pre>
+<blockquote>
+<p>&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;</p>
+</blockquote>
+<p>&#x751F;&#x6210;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x7684;&#x5199;&#x6CD5;&#x4E0E; ES5 &#x5B8C;&#x5168;&#x4E00;&#x6837;&#xFF0C;&#x4E5F;&#x662F;&#x4F7F;&#x7528;  new &#x547D;&#x4EE4;&#x3002;&#x5982;&#x679C;&#x5FD8;&#x8BB0;&#x52A0;&#x4E0A; new&#xFF0C;&#x50CF;&#x51FD;&#x6570;&#x90A3;&#x6837;&#x8C03;&#x7528; Class &#x5C06;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
+<p>&#x4E0E; ES5 &#x4E00;&#x6837;&#xFF0C;&#x5B9E;&#x4F8B;&#x7684;&#x5C5E;&#x6027;&#x9664;&#x975E;&#x663E;&#x5F0F;&#x5B9A;&#x4E49;&#x5728;&#x5176;&#x672C;&#x8EAB;&#xFF08;&#x5373;this&#x5BF9;&#x8C61;&#xFF09;&#x4E0A;&#xFF0C;&#x5426;&#x5219;&#x90FD;&#x662F;&#x5B9A;&#x4E49;&#x5728;&#x539F;&#x578B;&#xFF08;&#x5373;Class&#xFF09;&#x4E0A;&#x3002;</p>
+<p>&#x4E0E; ES5 &#x4E00;&#x6837;&#xFF0C;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x5B9E;&#x4F8B;&#x5171;&#x4EAB;&#x4E00;&#x4E2A;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x8FD9;&#x4E5F;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B9E;&#x4F8B;&#x7684; <strong>proto</strong> &#x5C5E;&#x6027;&#x4E3A; Class &#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x4F7F;&#x7528;&#x5B9E;&#x4F8B;&#x7684; <strong>proto</strong> &#x5C5E;&#x6027;&#x6539;&#x5199;&#x539F;&#x578B;&#x5FC5;&#x987B;&#x76F8;&#x5F53;&#x8C28;&#x614E;&#xFF0C;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4F1A;&#x6539;&#x53D8; Class &#x7684;&#x539F;&#x59CB;&#x5B9A;&#x4E49;&#xFF0C;&#x5F71;&#x54CD;&#x5230;&#x6240;&#x6709;&#x5B9E;&#x4F8B;&#x3002;</p>
+<blockquote>
+<p>name &#x5C5E;&#x6027;</p>
+</blockquote>
+<p>&#x7531;&#x4E8E;&#x672C;&#x8D28;&#x4E0A; ES6 &#x7684; Class &#x53EA;&#x662F; ES5 &#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x4E00;&#x5C42;&#x5305;&#x88C5;&#xFF0C;&#x6240;&#x4EE5;&#x51FD;&#x6570;&#x7684;&#x8BB8;&#x591A;&#x7279;&#x6027;&#x90FD;&#x88AB; Class &#x7EE7;&#x627F;&#xFF0C;&#x5305;&#x62EC; name &#x5C5E;&#x6027;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{}
+Point.name <span class="hljs-comment">// &quot;Point&quot;</span>
+</code></pre>
+<p>name &#x5C5E;&#x6027;&#x603B;&#x662F;&#x8FD4;&#x56DE;&#x7D27;&#x8DDF;&#x5728; class &#x5173;&#x952E;&#x5B57;&#x540E;&#x9762;&#x7684;&#x7C7B;&#x540D;&#x3002;</p>
+<blockquote>
+<p>Class &#x8868;&#x8FBE;&#x5F0F;</p>
+</blockquote>
+<p>&#x4E0E;&#x51FD;&#x6570;&#x4E00;&#x6837;&#xFF0C;Class &#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x5F62;&#x5F0F;&#x5B9A;&#x4E49;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> MyClass = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Me</span> </span>{
+  getClassName() {
+    <span class="hljs-keyword">return</span> Me.name;
+  }
+}
+</code></pre>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x540D;&#x5B57;&#x662F; MyClass &#x800C;&#x4E0D;&#x662F; Me&#xFF0C;Me &#x53EA;&#x5728; Class &#x7684;&#x5185;&#x90E8;&#x4EE3;&#x7801;&#x53EF;&#x7528;&#xFF0C;&#x6307;&#x4EE3;&#x5F53;&#x524D;&#x7C7B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> inst = <span class="hljs-keyword">new</span> MyClass();
+inst.getClassName() <span class="hljs-comment">// Me</span>
+Me.name <span class="hljs-comment">// ReferenceError: Me is not defined</span>
+</code></pre>
+<p>&#x5982;&#x679C; Class &#x5185;&#x90E8;&#x6CA1;&#x6709;&#x7528;&#x5230;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x7701;&#x7565; Me&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x5199;&#x6210;&#x4E0B;&#x9762;&#x7684;&#x5F62;&#x5F0F;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> MyClass = {};
+</code></pre>
+<p>&#x91C7;&#x7528; Class &#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x5199;&#x51FA;&#x7ACB;&#x5373;&#x6267;&#x884C;&#x7684; Class&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> person = <span class="hljs-keyword">new</span> <span class="hljs-class"><span class="hljs-keyword">class</span> </span>{
+  constructor(name) {
+    <span class="hljs-keyword">this</span>.name = name;
+  }
+
+  sayName() {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.name);
+  }
+}(<span class="hljs-string">&quot;&#x5F20;&#x4E09;&quot;</span>);
+
+person.sayName(); <span class="hljs-comment">// &quot;&#x5F20;&#x4E09;&quot;</span>
+</code></pre>
+<blockquote>
+<p>&#x4E0D;&#x5B58;&#x5728;&#x53D8;&#x91CF;&#x63D0;&#x5347;</p>
+</blockquote>
+<p>Class &#x4E0D;&#x5B58;&#x5728;&#x53D8;&#x91CF;&#x63D0;&#x5347;&#xFF0C;&#x8FD9;&#x4E00;&#x70B9;&#x4E0E; ES5 &#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Foo(); <span class="hljs-comment">// ReferenceError</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{}
+</code></pre>
+<p>ES6 &#x4E0D;&#x4F1A;&#x628A;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x63D0;&#x5347;&#x5230;&#x4EE3;&#x7801;&#x5934;&#x90E8;&#x3002;&#x8FD9;&#x79CD;&#x89C4;&#x5B9A;&#x7684;&#x539F;&#x56E0;&#x4E0E;&#x4E0B;&#x6587;&#x8981;&#x63D0;&#x5230;&#x7684;&#x7EE7;&#x627F;&#x6709;&#x5173;&#xFF0C;&#x5FC5;&#x987B;&#x4FDD;&#x8BC1;&#x5B50;&#x7C7B;&#x5728;&#x7236;&#x7C7B;&#x4E4B;&#x540E;&#x5B9A;&#x4E49;&#x3002;</p>
+<blockquote>
+<p>&#x4E25;&#x683C;&#x6A21;&#x5F0F;</p>
+</blockquote>
+<p>&#x7C7B;&#x548C;&#x6A21;&#x5757;&#x7684;&#x5185;&#x90E8;&#x9ED8;&#x8BA4;&#x5C31;&#x662F;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528; use strict &#x6307;&#x5B9A;&#x8FD0;&#x884C;&#x6A21;&#x5F0F;&#x3002;&#x53EA;&#x8981;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x5199;&#x5728;&#x7C7B;&#x6216;&#x6A21;&#x5757;&#x4E2D;&#xFF0C;&#x5C31;&#x53EA;&#x6709;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x53EF;&#x7528;&#x3002;</p>
+<p>&#x8003;&#x8651;&#x5230;&#x672A;&#x6765;&#x6240;&#x6709;&#x7684;&#x4EE3;&#x7801;&#x8D77;&#x59CB;&#x90FD;&#x5141;&#x8BB8;&#x5728;&#x6A21;&#x5757;&#x4E2D;&#xFF0C;&#x6240;&#x4EE5; ES6 &#x5B9E;&#x9645;&#x4E0A;&#x628A;&#x6574;&#x4E2A;&#x8BED;&#x8A00;&#x5347;&#x7EA7;&#x5230;&#x4E86;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x3002;</p>
+<h2 id="class-&#x7684;&#x7EE7;&#x627F;">Class &#x7684;&#x7EE7;&#x627F;</h2>
+<blockquote>
+<p>&#x57FA;&#x672C;&#x7528;&#x6CD5;</p>
+</blockquote>
+<p>Class &#x4E4B;&#x95F4;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; extends &#x5173;&#x952E;&#x5B57;&#x5B9E;&#x73B0;&#x7EE7;&#x627F;&#xFF0C;&#x8FD9;&#x6BD4; ES5 &#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x539F;&#x578B;&#x94FE;&#x5B9E;&#x73B0;&#x7EE7;&#x627F;&#x8981;&#x6E05;&#x6670;&#x548C;&#x65B9;&#x4FBF;&#x5F88;&#x591A;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ColorPoint</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Point</span> </span>{
+  constructor(x, y, color) {
+    <span class="hljs-keyword">super</span>(x, y); <span class="hljs-comment">// &#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684; constructor(x, y)</span>
+    <span class="hljs-keyword">this</span>.color = color;
+  }
+
+  toString() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.color + <span class="hljs-string">&apos;&apos;</span> + <span class="hljs-keyword">super</span>.toString(); <span class="hljs-comment">// &#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684; toString()</span>
+  }
+}
+</code></pre>
+<p>&#x5B50;&#x7C7B;&#x5FC5;&#x987B;&#x5728; constructor &#x65B9;&#x6CD5;&#x4E2D;&#x8C03;&#x7528; super &#x65B9;&#x6CD5;&#xFF0C;&#x5426;&#x5219;&#x65B0;&#x5EFA;&#x5B9E;&#x4F8B;&#x65F6;&#x4F1A;&#x62A5;&#x9519;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x5B50;&#x7C7B;&#x6CA1;&#x6709;&#x81EA;&#x5DF1;&#x7684; this &#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x662F;&#x7EE7;&#x627F;&#x4E86;&#x7236;&#x7C7B;&#x7684; this &#x5BF9;&#x8C61;&#xFF0C;&#x7136;&#x540E;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x52A0;&#x5DE5;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x8C03;&#x7528; super &#x65B9;&#x6CD5;&#xFF0C;&#x5B50;&#x7C7B;&#x5C31;&#x5F97;&#x4E0D;&#x5230; this &#x5BF9;&#x8C61;&#x3002;</p>
+<p>ES5 &#x7684;&#x7EE7;&#x627F;&#x5B9E;&#x8D28;&#x4E0A;&#x662F;&#x5148;&#x521B;&#x9020;&#x5B50;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61; this&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5C06;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x6DFB;&#x52A0;&#x5230; this &#x4E0A;&#xFF08;Parent.apply(this)&#xFF09;&#xFF0C;ES6 &#x7684;&#x7EE7;&#x627F;&#x673A;&#x5236;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#xFF0C;&#x5B9E;&#x8D28;&#x4E0A;&#x662F;&#x5148;&#x521B;&#x9020;&#x7236;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61; this&#xFF08;&#x6240;&#x4EE5;&#x5FC5;&#x987B;&#x5148;&#x8C03;&#x7528; super &#x65B9;&#x6CD5;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x7528;&#x5B50;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4FEE;&#x6539; this&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5B50;&#x7C7B;&#x6CA1;&#x6709;&#x5B9A;&#x4E49; constructor &#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x88AB;&#x9ED8;&#x8BA4;&#x6DFB;&#x52A0;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x4E0D;&#x7BA1;&#x6709;&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x5B9A;&#x4E49;&#xFF0C;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x5B50;&#x7C7B;&#x90FD;&#x6709; constructor &#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-javascript">constructor(...args) {
+  <span class="hljs-keyword">super</span>(...args);
+}
+</code></pre>
+<p>&#x53E6;&#x4E00;&#x4E2A;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x5730;&#x65B9;&#x662F;&#xFF0C;&#x5728;&#x5B50;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x53EA;&#x6709;&#x8C03;&#x7528; super &#x4E4B;&#x540E;&#xFF0C;&#x624D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; this &#x5173;&#x952E;&#x5B57;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x62A5;&#x9519;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x5B50;&#x7C7B;&#x5B9E;&#x4F8B;&#x7684;&#x6784;&#x5EFA;&#x57FA;&#x4E8E;&#x5BF9;&#x7236;&#x7C7B;&#x5B9E;&#x4F8B;&#x7684;&#x52A0;&#x5DE5;&#xFF0C;&#x53EA;&#x6709; super &#x65B9;&#x6CD5;&#x624D;&#x80FD;&#x8FD4;&#x56DE;&#x7236;&#x7C7B;&#x5B9E;&#x4F8B;&#x3002;</p>
+<blockquote>
+<p>&#x7C7B;&#x7684; prototype &#x5C5E;&#x6027;&#x548C; <strong>proto</strong> &#x5C5E;&#x6027;</p>
+</blockquote>
+<p>&#x5927;&#x591A;&#x6570;&#x6D4F;&#x89C8;&#x5668;&#x7684; ES5 &#x5B9E;&#x73B0;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x6709; <strong>proto</strong> &#x5C5E;&#x6027;&#xFF0C;&#x6307;&#x5411;&#x5BF9;&#x5E94;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684; prototype &#x5C5E;&#x6027;&#x3002;Class &#x4F5C;&#x4E3A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x8BED;&#x6CD5;&#x7CD6;&#xFF0C;&#x540C;&#x65F6;&#x6709; prototype &#x5C5E;&#x6027;&#x548C; <strong>proto</strong> &#x5C5E;&#x6027;&#xFF0C;&#x56E0;&#x6B64;&#x540C;&#x65F6;&#x5B58;&#x5728;&#x4E24;&#x6761;&#x7EE7;&#x627F;&#x94FE;&#x3002;</p>
+<ol>
+<li>&#x5B50;&#x7C7B;&#x7684; <strong>proto</strong> &#x5C5E;&#x6027;&#x8868;&#x793A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x7EE7;&#x627F;&#xFF0C;&#x603B;&#x662F;&#x6307;&#x5411;&#x7236;&#x7C7B;&#x3002;</li>
+<li>&#x5B50;&#x7C7B; prototype &#x5C5E;&#x6027;&#x7684; <strong>proto</strong> &#x5C5E;&#x6027;&#x8868;&#x793A;&#x65B9;&#x6CD5;&#x7684;&#x7EE7;&#x627F;&#xFF0C;&#x603B;&#x662F;&#x6307;&#x5411;&#x7236;&#x7C7B;&#x7684; prototype &#x5C5E;&#x6027;&#x3002;</li>
+</ol>
+<blockquote>
+<p>extends &#x7684;&#x7EE7;&#x627F;&#x76EE;&#x6807;</p>
+</blockquote>
+<p>extends &#x5173;&#x952E;&#x5B57;&#x540E;&#x9762;&#x53EF;&#x4EE5;&#x8DDF;&#x591A;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{}
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684; A &#x53EA;&#x8981;&#x662F;&#x4E00;&#x4E2A;&#x6709; prototype &#x5C5E;&#x6027;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x80FD;&#x88AB; B  &#x7EE7;&#x627F;&#x3002;&#x7531;&#x4E8E;&#x51FD;&#x6570;&#x90FD;&#x6709; prototype &#x5C5E;&#x6027;&#xFF0C;&#x56E0;&#x6B64; A &#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x610F;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x8BA8;&#x8BBA; 3 &#x79CD;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#x3002;</p>
+<p>&#x7B2C; 1 &#x79CD;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#xFF0C;&#x5B50;&#x7C7B;&#x7EE7;&#x627F; Object &#x7C7B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Object</span> </span>{}
+
+A.__proto__ === <span class="hljs-built_in">Object</span> <span class="hljs-comment">// true</span>
+A.prototype.__proto__ === <span class="hljs-built_in">Object</span>.prototype <span class="hljs-comment">// true</span>
+</code></pre>
+<p>&#x7B2C; 2 &#x79CD;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x4EFB;&#x4F55;&#x7EE7;&#x627F;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{}
+
+A.__proto__ === <span class="hljs-built_in">Function</span>.prototype <span class="hljs-comment">// true</span>
+A.prototype.__proto__ === <span class="hljs-built_in">Object</span>.prototype <span class="hljs-comment">// true</span>
+</code></pre>
+<p>&#x7B2C; 3 &#x79CD;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#xFF0C;&#x5B50;&#x7C7B;&#x7EE7;&#x627F; null&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">null</span> </span>{}
+
+A.__proto__ === <span class="hljs-built_in">Function</span>.prototype <span class="hljs-comment">// true</span>
+A.prototype.__proto__ === undefind <span class="hljs-comment">// true</span>
+</code></pre>
+<p>Object.getPrototype &#x65B9;&#x6CD5;&#x53EF;&#x7528;&#x4E8E;&#x4ECE;&#x5B50;&#x7C7B;&#x4E0A;&#x83B7;&#x53D6;&#x7236;&#x7C7B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">Object</span>.getPrototype(ColorPoint) === Point <span class="hljs-comment">// true</span>
+</code></pre>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x7C7B;&#x662F;&#x5426;&#x7EE7;&#x627F;&#x4E86;&#x53E6;&#x4E00;&#x4E2A;&#x7C7B;&#x3002;</p>
+<blockquote>
+<p>super &#x5173;&#x952E;&#x5B57;</p>
+</blockquote>
+<p>&#x4E0A;&#x9762;&#x8BB2;&#x8FC7;&#xFF0C;&#x5728;&#x5B50;&#x7C7B;&#x4E2D; super &#x5173;&#x952E;&#x5B57;&#x4EE3;&#x8868;&#x7236;&#x7C7B;&#x5B9E;&#x4F8B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
+  get m() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._p * <span class="hljs-keyword">super</span>._p
+  }
+  set m() {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;&#x8BE5;&#x5C5E;&#x6027;&#x53EA;&#x8BFB;&apos;</span>);
+  }
+}
+</code></pre>
+<p>&#x7531;&#x4E8E;&#x5BF9;&#x8C61;&#x603B;&#x662F;&#x7EE7;&#x627F;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x5728;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#x4F7F;&#x7528; super &#x5173;&#x952E;&#x5B57;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> obj = {
+  toString() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;MyObject: &quot;</span> + <span class="hljs-keyword">super</span>.toString();
+  }
+}
+
+obj.toString(); <span class="hljs-comment">// MyObject: [object object]</span>
+</code></pre>
+<blockquote>
+<p>&#x5B9E;&#x4F8B;&#x7684; <strong>proto</strong> &#x5C5E;&#x6027;</p>
+</blockquote>
+<p>&#x5B50;&#x7C7B;&#x5B9E;&#x4F8B;&#x7684; <strong>proto</strong> &#x5C5E;&#x6027;&#x7684; <strong>proto</strong> &#x5C5E;&#x6027;&#xFF0C;&#x6307;&#x5411;&#x7236;&#x7C7B;&#x5B9E;&#x4F8B;&#x7684; <strong>proto</strong> &#x5C5E;&#x6027;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5B50;&#x7C7B;&#x7684;&#x539F;&#x578B;&#x7684;&#x539F;&#x578B;&#x662F;&#x7236;&#x7C7B;&#x7684;&#x539F;&#x578B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> p1 = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
+<span class="hljs-keyword">var</span> p2 = <span class="hljs-keyword">new</span> ColorPoint(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-string">&apos;red&apos;</span>);
+
+p2.__proto__ === p1.__proto__ <span class="hljs-comment">// false</span>
+p2.__proto__.__proto__ === p1.__proto__ <span class="hljs-comment">// true</span>
+</code></pre>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x901A;&#x8FC7;&#x5B50;&#x7C7B;&#x5B9E;&#x4F8B;&#x7684; <strong>proto</strong>.<strong>proto</strong> &#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x7236;&#x7C7B;&#x5B9E;&#x4F8B;&#x7684;&#x884C;&#x4E3A;&#x3002;</p>
+<pre><code class="lang-javascript">p2.__proto__.__proto__.printName = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Ha&apos;</span>);
+}
+
+p1.printName() <span class="hljs-comment">// &apos;Ha&apos;</span>
+</code></pre>
+<h2 id="&#x539F;&#x751F;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x7EE7;&#x627F;">&#x539F;&#x751F;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x7EE7;&#x627F;</h2>
+<p>&#x539F;&#x751F;&#x6784;&#x9020;&#x51FD;&#x6570;&#x662F;&#x6307;&#x8BED;&#x8A00;&#x5185;&#x7F6E;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x901A;&#x5E38;&#x7528;&#x6765;&#x751F;&#x6210;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;ECMAScript &#x7684;&#x539F;&#x751F;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5927;&#x81F4;&#x6709;&#x4E0B;&#x9762;&#x8FD9;&#x4E9B;&#x3002;</p>
+<ul>
+<li>Boolean()</li>
+<li>Number()</li>
+<li>String()</li>
+<li>Array()</li>
+<li>Date()</li>
+<li>Function()</li>
+<li>RegExp()</li>
+<li>Error()</li>
+<li>Object()</li>
+</ul>
+<p>&#x4EE5;&#x524D;&#xFF0C;&#x8FD9;&#x4E9B;&#x5143;&#x7D20;&#x6784;&#x9020;&#x51FD;&#x6570;&#x662F;&#x65E0;&#x6CD5;&#x7EE7;&#x627F;&#x7684;&#x3002;&#x4E4B;&#x6240;&#x4EE5;&#x4F1A;&#x53D1;&#x751F;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x5B50;&#x7C7B;&#x65E0;&#x6CD5;&#x83B7;&#x5F97;&#x539F;&#x751F;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x5185;&#x90E8;&#x5C5E;&#x6027;&#xFF0C;&#x901A;&#x8FC7; apply &#x6216;&#x8005;&#x5206;&#x914D;&#x7ED9;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x90FD;&#x4E0D;&#x884C;&#x3002;ES5 &#x662F;&#x5148;&#x65B0;&#x5EFA;&#x5B50;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61; this&#xFF0C;&#x518D;&#x5C06;&#x7236;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x6DFB;&#x52A0;&#x5230;&#x5B50;&#x7C7B;&#x4E0A;&#xFF0C;&#x7531;&#x4E8E;&#x7236;&#x7C7B;&#x7684;&#x5185;&#x90E8;&#x5C5E;&#x6027;&#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#xFF0C;&#x5BFC;&#x81F4;&#x65E0;&#x6CD5;&#x7EE7;&#x627F;&#x539F;&#x751F;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<p>ES6 &#x5141;&#x8BB8;&#x7EE7;&#x627F;&#x539F;&#x751F;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x5B50;&#x7C7B;&#xFF0C;&#x56E0;&#x4E3A; ES6 &#x662F;&#x5148;&#x65B0;&#x5EFA;&#x7236;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61; this&#xFF0C;&#x7136;&#x540E;&#x518D;&#x7528;&#x5B50;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4FEE;&#x9970; this&#xFF0C;&#x8FD9;&#x4F7F;&#x5F97;&#x7236;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x884C;&#x4E3A;&#x90FD;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;&#x3002;</p>
+<p>extends &#x5173;&#x952E;&#x5B57;&#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x7EE7;&#x627F;&#x7C7B;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x7EE7;&#x627F;&#x539F;&#x751F;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x5728;&#x539F;&#x751F;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x5B9A;&#x4E49;&#x81EA;&#x5DF1;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;</p>
+<h2 id="class-&#x7684;&#x53D6;&#x503C;&#x51FD;&#x6570;&#xFF08;getter&#xFF09;&#x548C;&#x5B58;&#x503C;&#x51FD;&#x6570;&#xFF08;setter&#xFF09;">Class &#x7684;&#x53D6;&#x503C;&#x51FD;&#x6570;&#xFF08;getter&#xFF09;&#x548C;&#x5B58;&#x503C;&#x51FD;&#x6570;&#xFF08;setter&#xFF09;</h2>
+<p>&#x4E0E; ES5 &#x4E00;&#x6837;&#xFF0C;&#x5728; Class &#x5185;&#x90E8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; get &#x548C; set &#x5173;&#x952E;&#x5B57;&#x5BF9;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x5B58;&#x503C;&#x51FD;&#x6570;&#x548C;&#x53D6;&#x503C;&#x51FD;&#x6570;&#xFF0C;&#x62E6;&#x622A;&#x8BE5;&#x5C5E;&#x6027;&#x7684;&#x5B58;&#x53D6;&#x884C;&#x4E3A;&#x3002;</p>
+<p>&#x5B58;&#x503C;&#x51FD;&#x6570;&#x548C;&#x53D6;&#x503C;&#x51FD;&#x6570;&#x662F;&#x8BBE;&#x7F6E;&#x5728;&#x5C5E;&#x6027;&#x7684; descriptor &#x5BF9;&#x8C61;&#x4E0A;&#x7684;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomHTMLElement</span> </span>{
+  constructor() {}
+  get prop() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;getter&apos;</span>;
+  }
+  set prop(value) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;setter:&apos;</span> + value);
+  }
+}
+
+<span class="hljs-keyword">let</span> inst = <span class="hljs-keyword">new</span> MyClass();
+
+inst.prop = <span class="hljs-number">123</span>; <span class="hljs-comment">// setter: 123</span>
+inst.prop <span class="hljs-comment">// &apos;getter&apos;</span>
+</code></pre>
+<h2 id="class-&#x7684;-generator-&#x65B9;&#x6CD5;">Class &#x7684; Generator &#x65B9;&#x6CD5;</h2>
+<p>&#x5982;&#x679C;&#x5728;&#x67D0;&#x4E2A;&#x65B9;&#x6CD5;&#x524D;&#x9762;&#x52A0;&#x4E0A;&#x661F;&#x53F7;&#xFF08;<code>*</code>&#xFF09;&#xFF0C;&#x5C31;&#x8868;&#x793A;&#x8BE5;&#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x4E2A; Generator &#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+  constructor(...args) {
+    <span class="hljs-keyword">this</span>.args = args;
+  }
+
+  * [<span class="hljs-built_in">Symbol</span>.iterator]() {
+     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> arg <span class="hljs-keyword">of</span> <span class="hljs-keyword">this</span>.args) {
+       <span class="hljs-keyword">yield</span> arg;
+     }
+  }
+}
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> x <span class="hljs-keyword">of</span> <span class="hljs-keyword">new</span> Foo(<span class="hljs-string">&apos;hello&apos;</span>, <span class="hljs-string">&apos;world&apos;</span>)) {
+  <span class="hljs-built_in">console</span>.log(x);
+}
+
+<span class="hljs-comment">// hello</span>
+<span class="hljs-comment">// world</span>
+</code></pre>
+<h2 id="class-&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;">Class &#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;</h2>
+<p>&#x7C7B;&#x76F8;&#x5F53;&#x4E8E;&#x5B9E;&#x4F8B;&#x7684;&#x539F;&#x578B;&#xFF0C;&#x6240;&#x6709;&#x5728;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;&#x90FD;&#x4F1A;&#x88AB;&#x5B9E;&#x4F8B;&#x7EE7;&#x627F;&#x3002;&#x5982;&#x679C;&#x5728;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x524D;&#x52A0;&#x4E0A; static &#x5173;&#x952E;&#x5B57;&#xFF0C;&#x5C31;&#x8868;&#x793A;&#x8BE5;&#x65B9;&#x6CD5;&#x4E0D;&#x4F1A;&#x88AB;&#x5B9E;&#x4F8B;&#x7EE7;&#x627F;&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x7C7B;&#x8C03;&#x7528;&#xFF0C;&#x79F0;&#x4E3A;&#x201C;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x201D;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+  static classMethod() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;hello&apos;</span>;
+  }
+}
+
+Foo.classMethod() <span class="hljs-comment">// &apos;hello&apos;</span>
+
+<span class="hljs-keyword">var</span> foo = <span class="hljs-keyword">new</span> Foo();
+foo.classMethod() <span class="hljs-comment">// TypeError: undefined is not a  function</span>
+</code></pre>
+<p>&#x7236;&#x7C7B;&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x88AB;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+  static classMethod() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;hello&apos;</span>;
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Foo</span> </span>{}
+
+Bar.classMethod(); <span class="hljs-comment">// &apos;hello&apos;</span>
+</code></pre>
+<p>&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x4E5F;&#x53EF;&#x4EE5;&#x4ECE; super &#x5BF9;&#x8C61;&#x4E0A;&#x8C03;&#x7528;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+  static classMethod() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;hello&apos;</span>;
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Foo</span> </span>{
+  static classMethod() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">super</span>.classMethod() + <span class="hljs-string">&apos;, too&apos;</span>;
+  }
+}
+
+Bar.classMethod();
+</code></pre>
+<h2 id="class-&#x7684;&#x9759;&#x6001;&#x5C5E;&#x6027;">Class &#x7684;&#x9759;&#x6001;&#x5C5E;&#x6027;</h2>
+<p>&#x9759;&#x6001;&#x5C5E;&#x6027;&#x6307;&#x7684;&#x662F; Class &#x672C;&#x8EAB;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5373; Class.propname&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5B9A;&#x4E49;&#x5728;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#xFF08;this&#xFF09;&#x4E0A;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{}
+
+Foo.prop = <span class="hljs-number">1</span>;
+Foo.prop <span class="hljs-comment">// 1</span>
+</code></pre>
+<p>&#x76EE;&#x524D;&#xFF0C;&#x53EA;&#x6709;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x53EF;&#x884C;&#xFF0C;&#x56E0;&#x4E3A; ES6 &#x660E;&#x786E;&#x89C4;&#x5B9A;&#xFF0C;Class &#x5185;&#x90E8;&#x53EA;&#x6709;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#xFF0C;&#x6CA1;&#x6709;&#x9759;&#x6001;&#x5C5E;&#x6027;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x5199;&#x6CD5;&#x90FD;&#x65E0;&#x6548;&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+  <span class="hljs-comment">// &#x5199;&#x6CD5;&#x4E00;</span>
+  prop: <span class="hljs-number">2</span>
+
+  <span class="hljs-comment">// &#x5199;&#x6CD5;&#x4E8C;</span>
+  static prop: <span class="hljs-number">2</span>
+}
+</code></pre>
+<p>ES7 &#x6709;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x5C5E;&#x6027;&#x7684;&#x63D0;&#x6848;&#xFF0C;&#x76EE;&#x524D; Babel &#x8F6C;&#x7801;&#x5668;&#x5DF2;&#x652F;&#x6301;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x63D0;&#x6848;&#x5BF9;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#x548C;&#x9759;&#x6001;&#x5C5E;&#x6027;&#x90FD;&#x89C4;&#x5B9A;&#x4E86;&#x65B0;&#x7684;&#x5199;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#x7684;&#x65B0;&#x5199;&#x6CD5;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span> </span>{
+  myProp = <span class="hljs-number">42</span>;
+
+  constructor() {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.myProp); <span class="hljs-comment">// 42</span>
+  }
+}
+
+<span class="hljs-comment">// &#x9759;&#x6001;&#x5C5E;&#x6027;&#x7684;&#x65B0;&#x5199;&#x6CD5;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span> </span>{
+  static myStaticProp = <span class="hljs-number">42</span>;
+
+  constructor() {
+    <span class="hljs-built_in">console</span>.log(MyClass.myProp); <span class="hljs-comment">// 42</span>
+  }
+}
+</code></pre>
+<h2 id="newtarget-&#x5C5E;&#x6027;">new.target &#x5C5E;&#x6027;</h2>
+<p>new &#x662F;&#x4ECE;&#x6784;&#x9020;&#x51FD;&#x6570;&#x751F;&#x6210;&#x5B9E;&#x4F8B;&#x7684;&#x547D;&#x4EE4;&#x3002;ES6 &#x4E3A; new &#x547D;&#x4EE4;&#x5F15;&#x5165;&#x4E86; new.target &#x5C5E;&#x6027;&#xFF0C;&#xFF08;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#xFF09;&#x8FD4;&#x56DE; new &#x547D;&#x4EE4;&#x6240;&#x4F5C;&#x7528;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x5982;&#x679C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0D;&#x662F;&#x901A;&#x8FC7; new &#x547D;&#x4EE4;&#x8C03;&#x7528;&#x7684;&#xFF0C;&#x90A3;&#x4E48; new.target &#x4F1A;&#x8FD4;&#x56DE; undefined&#xFF0C;&#x56E0;&#x6B64;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x53EF;&#x7528;&#x4E8E;&#x786E;&#x5B9A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x662F;&#x600E;&#x4E48;&#x8C03;&#x7528;&#x7684;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Person</span>(<span class="hljs-params">name</span>) </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">new</span>.target !== <span class="hljs-literal">undefined</span>) {
+    <span class="hljs-keyword">this</span>.name = name;
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;&#x5FC5;&#x987B;&#x4F7F;&#x7528; new &#x751F;&#x6210;&#x5B9E;&#x4F8B;&apos;</span>);
+  }
+}
+</code></pre>
+<p>Class &#x5185;&#x90E8;&#x8C03;&#x7528; new.target&#xFF0C;&#x8FD4;&#x56DE;&#x5F53;&#x524D; Class&#x3002;</p>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#x7236;&#x7C7B;&#x65F6; new.target &#x4F1A;&#x8FD4;&#x56DE;&#x5B50;&#x7C7B;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5728;&#x51FD;&#x6570;&#x5916;&#x90E8;&#xFF0C;&#x4F7F;&#x7528; new.target &#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
+<h2 id="mixin-&#x6A21;&#x5F0F;&#x7684;&#x5B9E;&#x73B0;">Mixin &#x6A21;&#x5F0F;&#x7684;&#x5B9E;&#x73B0;</h2>
+<p>Mixin &#x6A21;&#x5F0F;&#x6307;&#x7684;&#x662F;&#xFF0C;&#x5C06;&#x591A;&#x4E2A;&#x7C7B;&#x7684;&#x63A5;&#x53E3; &#x201C;&#x6DF7;&#x5165;&#x201D;&#xFF08;mixin&#xFF09;&#x53E6;&#x4E00;&#x4E2A;&#x7C7B;&#x3002;&#x5B83;&#x5728; ES6 &#x7684;&#x5B9E;&#x73B0;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mix</span>(<span class="hljs-params">...mixins</span>) </span>{
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Mix</span> </span>{}
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> mixin <span class="hljs-keyword">of</span> mixins) {
+    copyProperties(Mix, mixin);
+    copyProperties(Mix.prototype, mixin.prototype);
+  }
+
+  <span class="hljs-keyword">return</span> Mix;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">copyProperties</span>(<span class="hljs-params">target, source</span>) </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> key <span class="hljs-keyword">of</span> <span class="hljs-built_in">Reflect</span>.ownKeys(source)) {
+    <span class="hljs-keyword">if</span> (
+      key !== <span class="hljs-string">&quot;constructor&quot;</span>
+      &amp;&amp; key !== <span class="hljs-string">&quot;prototype&quot;</span>
+      &amp;&amp; key !== <span class="hljs-string">&quot;name&quot;</span>
+    ) {
+      <span class="hljs-keyword">let</span> desc = <span class="hljs-built_in">Object</span>.getOwnPropertyDescroptor(source, key);
+      <span class="hljs-built_in">Object</span>.defineProperty(target, key, desc);
+    }
+  }
+}
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684; mix &#x51FD;&#x6570;&#x53EF;&#x5C06;&#x591A;&#x4E2A;&#x5BF9;&#x8C61;&#x5408;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x7C7B;&#x3002;&#x4F7F;&#x7528;&#x65F6;&#x53EA;&#x9700;&#x7EE7;&#x627F;&#x8FD9;&#x4E2A;&#x7C7B;&#x5373;&#x53EF;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DistributedEdit</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">mix</span>(<span class="hljs-title">Loggable</span>, <span class="hljs-title">Serializable</span>) </span>{}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../Concept/async/index.html" class="navigation navigation-prev " aria-label="Previous page: async"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../Concept/Decorator/index.html" class="navigation navigation-next " aria-label="Next page: Decorator"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

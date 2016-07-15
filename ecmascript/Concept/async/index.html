@@ -1,0 +1,1508 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>async | ECMAScript 6 API 速查手册</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../Concept/Class/index.html" />
+    
+    
+    <link rel="prev" href="../../Concept/Generator/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="0.1.4"
+        data-chapter-title="async"
+        data-filepath="Concept/async/README.md"
+        data-basepath="../.."
+        data-revision="Fri Jul 15 2016 13:41:31 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        ECMAScript 6 API 参考手册
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1" data-path="Concept/index.html">
+            
+                
+                    <a href="../../Concept/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                        新语法及概念
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1.1" data-path="Concept/Syntax/index.html">
+            
+                
+                    <a href="../../Concept/Syntax/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.1.</b>
+                        
+                        语法的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.2" data-path="Concept/Iterator/index.html">
+            
+                
+                    <a href="../../Concept/Iterator/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.2.</b>
+                        
+                        Iterator
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1.2.1" >
+            
+            <span><b>0.1.2.1.</b> 4</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.3" data-path="Concept/Generator/index.html">
+            
+                
+                    <a href="../../Concept/Generator/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.3.</b>
+                        
+                        Generator
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1.3.1" >
+            
+            <span><b>0.1.3.1.</b> 5</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="0.1.4" data-path="Concept/async/index.html">
+            
+                
+                    <a href="../../Concept/async/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.4.</b>
+                        
+                        async
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1.4.1" >
+            
+            <span><b>0.1.4.1.</b> 6</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.5" data-path="Concept/Class/index.html">
+            
+                
+                    <a href="../../Concept/Class/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.5.</b>
+                        
+                        Class
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.6" data-path="Concept/Decorator/index.html">
+            
+                
+                    <a href="../../Concept/Decorator/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.6.</b>
+                        
+                        Decorator
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.7" data-path="Concept/Module/index.html">
+            
+                
+                    <a href="../../Concept/Module/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.7.</b>
+                        
+                        Module
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2" data-path="Object/index.html">
+            
+                
+                    <a href="../../Object/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                        Object 类型的扩展
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.2.1" data-path="Object/Object.is.html">
+            
+                
+                    <a href="../../Object/Object.is.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.1.</b>
+                        
+                        Object.is()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.2" data-path="Object/Object.assign.html">
+            
+                
+                    <a href="../../Object/Object.assign.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.2.</b>
+                        
+                        Object.assign()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.3" data-path="Object/Object.setPrototypeOf.html">
+            
+                
+                    <a href="../../Object/Object.setPrototypeOf.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.3.</b>
+                        
+                        Object.setPrototypeOf()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2.4" data-path="Object/Object.getPrototypeOf.html">
+            
+                
+                    <a href="../../Object/Object.getPrototypeOf.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.4.</b>
+                        
+                        Object.getPrototypeOf()
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3" data-path="Array/index.html">
+            
+                
+                    <a href="../../Array/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                        Array 类型的扩展
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.3.1" data-path="Array/Array.from.html">
+            
+                
+                    <a href="../../Array/Array.from.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.1.</b>
+                        
+                        Array.from()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.2" data-path="Array/Array.of.html">
+            
+                
+                    <a href="../../Array/Array.of.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.2.</b>
+                        
+                        Array.of()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.3" data-path="Array/copyWithin.html">
+            
+                
+                    <a href="../../Array/copyWithin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.3.</b>
+                        
+                        copyWithin()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.4" data-path="Array/find.html">
+            
+                
+                    <a href="../../Array/find.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.4.</b>
+                        
+                        find()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.5" data-path="Array/findIndex.html">
+            
+                
+                    <a href="../../Array/findIndex.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.5.</b>
+                        
+                        findIndex()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.6" data-path="Array/fill.html">
+            
+                
+                    <a href="../../Array/fill.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.6.</b>
+                        
+                        fill()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.7" data-path="Array/entries.html">
+            
+                
+                    <a href="../../Array/entries.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.7.</b>
+                        
+                        entries()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.8" data-path="Array/keys.html">
+            
+                
+                    <a href="../../Array/keys.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.8.</b>
+                        
+                        keys()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.9" data-path="Array/values.html">
+            
+                
+                    <a href="../../Array/values.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.9.</b>
+                        
+                        values()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3.10" data-path="Array/includes.html">
+            
+                
+                    <a href="../../Array/includes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.10.</b>
+                        
+                        includes()
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4" data-path="Function/index.html">
+            
+                
+                    <a href="../../Function/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                        Function 类型的扩展
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.4.1" data-path="Function/name.html">
+            
+                
+                    <a href="../../Function/name.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.1.</b>
+                        
+                        name
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5" data-path="RegExp/index.html">
+            
+                
+                    <a href="../../RegExp/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.</b>
+                        
+                        RegExp 类型的扩展
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.5.1" data-path="RegExp/sticky.html">
+            
+                
+                    <a href="../../RegExp/sticky.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.1.</b>
+                        
+                        sticky
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5.2" data-path="RegExp/flags.html">
+            
+                
+                    <a href="../../RegExp/flags.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.2.</b>
+                        
+                        flags
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5.3" data-path="RegExp/RegExp.escape.html">
+            
+                
+                    <a href="../../RegExp/RegExp.escape.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.3.</b>
+                        
+                        RegExp.escape()
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6" data-path="Number/index.html">
+            
+                
+                    <a href="../../Number/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.</b>
+                        
+                        Number 类型的扩展
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.6.1" data-path="Number/Number.isFinite.html">
+            
+                
+                    <a href="../../Number/Number.isFinite.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.1.</b>
+                        
+                        Number.isFinite()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.2" data-path="Number/Number.isNaN.html">
+            
+                
+                    <a href="../../Number/Number.isNaN.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.2.</b>
+                        
+                        Number.isNaN()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.3" data-path="Number/Number.parseInt.html">
+            
+                
+                    <a href="../../Number/Number.parseInt.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.3.</b>
+                        
+                        Number.parseInt()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.4" data-path="Number/Number.parseFloat.html">
+            
+                
+                    <a href="../../Number/Number.parseFloat.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.4.</b>
+                        
+                        Number.parseFloat()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.5" data-path="Number/Number.isInteger.html">
+            
+                
+                    <a href="../../Number/Number.isInteger.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.5.</b>
+                        
+                        Number.isInteger()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.6" data-path="Number/Number.EPSILON.html">
+            
+                
+                    <a href="../../Number/Number.EPSILON.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.6.</b>
+                        
+                        Number.EPSILON
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.7" data-path="Number/Number.MAX_SAFE_INTEGER.html">
+            
+                
+                    <a href="../../Number/Number.MAX_SAFE_INTEGER.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.7.</b>
+                        
+                        Number.MAX_SAFE_INTEGER
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.8" data-path="Number/Number.MIN_SAFE_INTEGER.html">
+            
+                
+                    <a href="../../Number/Number.MIN_SAFE_INTEGER.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.8.</b>
+                        
+                        Number.MIN_SAFE_INTEGER
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6.9" data-path="Number/Number.isSafeInteger.html">
+            
+                
+                    <a href="../../Number/Number.isSafeInteger.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.9.</b>
+                        
+                        Number.isSafeInteger()
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7" data-path="String/index.html">
+            
+                
+                    <a href="../../String/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.</b>
+                        
+                        String 类型的扩展
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.7.1" data-path="String/codePointAt.html">
+            
+                
+                    <a href="../../String/codePointAt.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.1.</b>
+                        
+                        codePointAt()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.2" data-path="String/String.fromCodePoint.html">
+            
+                
+                    <a href="../../String/String.fromCodePoint.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.2.</b>
+                        
+                        String.fromCodePoint()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.3" data-path="String/at.html">
+            
+                
+                    <a href="../../String/at.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.3.</b>
+                        
+                        at()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.4" data-path="String/normalize.html">
+            
+                
+                    <a href="../../String/normalize.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.4.</b>
+                        
+                        normalize()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.5" data-path="String/includes.html">
+            
+                
+                    <a href="../../String/includes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.5.</b>
+                        
+                        includes()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.6" data-path="String/startsWith.html">
+            
+                
+                    <a href="../../String/startsWith.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.6.</b>
+                        
+                        startsWith()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.7" data-path="String/endsWith.html">
+            
+                
+                    <a href="../../String/endsWith.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.7.</b>
+                        
+                        endsWith()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.8" data-path="String/repeat.html">
+            
+                
+                    <a href="../../String/repeat.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.8.</b>
+                        
+                        repeat()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.9" data-path="String/padStart.html">
+            
+                
+                    <a href="../../String/padStart.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.9.</b>
+                        
+                        padStart()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.10" data-path="String/padEnd.html">
+            
+                
+                    <a href="../../String/padEnd.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.10.</b>
+                        
+                        padEnd()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7.11" data-path="String/String.raw.html">
+            
+                
+                    <a href="../../String/String.raw.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.11.</b>
+                        
+                        String.raw()
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8" data-path="Math/index.html">
+            
+                
+                    <a href="../../Math/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.</b>
+                        
+                        Math 对象的扩展
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.8.1" data-path="Math/Math.trunc.html">
+            
+                
+                    <a href="../../Math/Math.trunc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.1.</b>
+                        
+                        Math.trunc()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.2" data-path="Math/Math.sign.html">
+            
+                
+                    <a href="../../Math/Math.sign.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.2.</b>
+                        
+                        Math.sign()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.3" data-path="Math/Math.cbrt.html">
+            
+                
+                    <a href="../../Math/Math.cbrt.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.3.</b>
+                        
+                        Math.cbrt()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.4" data-path="Math/Math.clz32.html">
+            
+                
+                    <a href="../../Math/Math.clz32.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.4.</b>
+                        
+                        Math.clz32()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.5" data-path="Math/Math.imul.html">
+            
+                
+                    <a href="../../Math/Math.imul.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.5.</b>
+                        
+                        Math.imul()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.6" data-path="Math/Math.fround.html">
+            
+                
+                    <a href="../../Math/Math.fround.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.6.</b>
+                        
+                        Math.fround()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.7" data-path="Math/Math.hypot.html">
+            
+                
+                    <a href="../../Math/Math.hypot.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.7.</b>
+                        
+                        Math.hypot()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.8" data-path="Math/Math.expm1.html">
+            
+                
+                    <a href="../../Math/Math.expm1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.8.</b>
+                        
+                        Math.expm1()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.9" data-path="Math/Math.log1p.html">
+            
+                
+                    <a href="../../Math/Math.log1p.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.9.</b>
+                        
+                        Math.log1p()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.10" data-path="Math/Math.log10.html">
+            
+                
+                    <a href="../../Math/Math.log10.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.10.</b>
+                        
+                        Math.log10()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.11" data-path="Math/Math.log2.html">
+            
+                
+                    <a href="../../Math/Math.log2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.11.</b>
+                        
+                        Math.log2()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.12" data-path="Math/Math.sinh.html">
+            
+                
+                    <a href="../../Math/Math.sinh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.12.</b>
+                        
+                        Math.sinh()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.13" data-path="Math/Math.cosh.html">
+            
+                
+                    <a href="../../Math/Math.cosh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.13.</b>
+                        
+                        Math.cosh()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.14" data-path="Math/Math.tanh.html">
+            
+                
+                    <a href="../../Math/Math.tanh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.14.</b>
+                        
+                        Math.tanh()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.15" data-path="Math/Math.asinh.html">
+            
+                
+                    <a href="../../Math/Math.asinh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.15.</b>
+                        
+                        Math.asinh()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.16" data-path="Math/Math.acosh.html">
+            
+                
+                    <a href="../../Math/Math.acosh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.16.</b>
+                        
+                        Math.acosh()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8.17" data-path="Math/Math.atanh.html">
+            
+                
+                    <a href="../../Math/Math.atanh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.17.</b>
+                        
+                        Math.atanh()
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9" data-path="Symbol/index.html">
+            
+                
+                    <a href="../../Symbol/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.</b>
+                        
+                        Symbol 类型
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.9.1" >
+            
+            <span><b>0.9.1.</b> 7</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.10" data-path="Proxy/index.html">
+            
+                
+                    <a href="../../Proxy/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.10.</b>
+                        
+                        Proxy 类型
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.10.1" >
+            
+            <span><b>0.10.1.</b> 8</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.11" data-path="Reflect/index.html">
+            
+                
+                    <a href="../../Reflect/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.11.</b>
+                        
+                        Reflect 对象
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.11.1" >
+            
+            <span><b>0.11.1.</b> 9</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.12" data-path="ArrayBuffer/index.html">
+            
+                
+                    <a href="../../ArrayBuffer/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.12.</b>
+                        
+                        ArrayBuffer 类型
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.12.1" >
+            
+            <span><b>0.12.1.</b> 10</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.13" data-path="Set/index.html">
+            
+                
+                    <a href="../../Set/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.13.</b>
+                        
+                        Set 类型
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.13.1" >
+            
+            <span><b>0.13.1.</b> 11</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.14" data-path="Map/index.html">
+            
+                
+                    <a href="../../Map/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.14.</b>
+                        
+                        Map 类型
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.14.1" >
+            
+            <span><b>0.14.1.</b> 12</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15" data-path="Promise/index.html">
+            
+                
+                    <a href="../../Promise/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.</b>
+                        
+                        Promise 类型
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.15.1" >
+            
+            <span><b>0.15.1.</b> 13</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >ECMAScript 6 API 速查手册</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../Concept/Generator/index.html" class="navigation navigation-prev " aria-label="Previous page: Generator"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../Concept/Class/index.html" class="navigation navigation-next " aria-label="Next page: Class"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
