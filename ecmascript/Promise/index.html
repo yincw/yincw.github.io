@@ -37,6 +37,8 @@
         
     
     
+    <link rel="next" href="../Promise/then.html" />
+    
     
     <link rel="prev" href="../Map/index.html" />
     
@@ -51,7 +53,7 @@
         data-chapter-title="Promise 类型"
         data-filepath="Promise/README.md"
         data-basepath=".."
-        data-revision="Fri Jul 15 2016 13:41:31 GMT+0800 (中国标准时间)"
+        data-revision="Mon Aug 22 2016 12:05:30 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -156,9 +158,47 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="0.1.3.1" >
+        <li class="chapter " data-level="0.1.3.1" data-path="Concept/Generator/next.html">
             
-            <span><b>0.1.3.1.</b> 5</span>
+                
+                    <a href="../Concept/Generator/next.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.3.1.</b>
+                        
+                        next()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.3.2" data-path="Concept/Generator/throw.html">
+            
+                
+                    <a href="../Concept/Generator/throw.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.3.2.</b>
+                        
+                        throw()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.1.3.3" data-path="Concept/Generator/return.html">
+            
+                
+                    <a href="../Concept/Generator/return.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.3.3.</b>
+                        
+                        return()
+                    </a>
             
             
         </li>
@@ -180,19 +220,6 @@
                         async
                     </a>
             
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="0.1.4.1" >
-            
-            <span><b>0.1.4.1.</b> 6</span>
-            
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -1402,9 +1429,122 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="0.15.1" >
+        <li class="chapter " data-level="0.15.1" data-path="Promise/then.html">
             
-            <span><b>0.15.1.</b> 13</span>
+                
+                    <a href="../Promise/then.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.1.</b>
+                        
+                        then()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.2" data-path="Promise/catch.html">
+            
+                
+                    <a href="../Promise/catch.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.2.</b>
+                        
+                        catch()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.3" data-path="Promise/Promise.all.html">
+            
+                
+                    <a href="../Promise/Promise.all.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.3.</b>
+                        
+                        Promise.all()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.4" data-path="Promise/Promise.race.html">
+            
+                
+                    <a href="../Promise/Promise.race.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.4.</b>
+                        
+                        Promise.race()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.5" data-path="Promise/Promise.resolve.html">
+            
+                
+                    <a href="../Promise/Promise.resolve.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.5.</b>
+                        
+                        Promise.resolve()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.6" data-path="Promise/Promise.reject.html">
+            
+                
+                    <a href="../Promise/Promise.reject.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.6.</b>
+                        
+                        Promise.reject()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.7" data-path="Promise/done.html">
+            
+                
+                    <a href="../Promise/done.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.7.</b>
+                        
+                        done()
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15.8" data-path="Promise/finally.html">
+            
+                
+                    <a href="../Promise/finally.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.8.</b>
+                        
+                        finally()
+                    </a>
             
             
         </li>
@@ -1452,7 +1592,79 @@
                 
                     <section class="normal" id="section-">
                     
-                        
+                        <h1 id="promise-&#x7C7B;&#x578B;">Promise &#x7C7B;&#x578B;</h1>
+<h2 id="promise-&#x7684;&#x542B;&#x4E49;">Promise &#x7684;&#x542B;&#x4E49;</h2>
+<p>&#x6240;&#x8C13; Promise&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x7528;&#x6765;&#x4F20;&#x9012;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x6D88;&#x606F;&#x3002;&#x5B83;&#x4EE3;&#x8868;&#x4E86;&#x67D0;&#x4E2A;&#x672A;&#x6765;&#x624D;&#x4F1A;&#x77E5;&#x9053;&#x7ED3;&#x679C;&#x7684;&#x4E8B;&#x4EF6;&#xFF08;&#x901A;&#x5E38;&#x662F;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x63D0;&#x4F9B;&#x7EDF;&#x4E00;&#x7684; API&#xFF0C;&#x53EF;&#x4F9B;&#x8FDB;&#x4E00;&#x6B65;&#x5904;&#x7406;&#x3002;</p>
+<p>Promise &#x5BF9;&#x8C61;&#x6709;&#x4EE5;&#x4E0B;&#x4E24;&#x4E2A;&#x7279;&#x70B9;&#x3002;</p>
+<ul>
+<li><strong>&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x4E0D;&#x53D7;&#x5916;&#x754C;&#x5F71;&#x54CD;&#x3002;</strong> Promise&#xFF08;&#x627F;&#x8BFA;&#xFF09; &#x5BF9;&#x8C61;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#xFF0C;&#x6709; 3 &#x79CD;&#x72B6;&#x6001;&#xFF1A;Pending&#xFF08;&#x8FDB;&#x884C;&#x4E2D;&#xFF09;&#x3001;Resolved&#xFF08;&#x5DF2;&#x5B8C;&#x6210;&#xFF0C;&#x53C8;&#x79F0; Fulfilled&#xFF09;&#x548C; Rejected&#xFF08;&#x5DF2;&#x5931;&#x8D25;&#xFF09;&#x3002;&#x53EA;&#x6709;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x7ED3;&#x679C;&#x53EF;&#x4EE5;&#x51B3;&#x5B9A;&#x5F53;&#x524D;&#x662F;&#x54EA;&#x4E00;&#x79CD;&#x72B6;&#x6001;&#xFF0C;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x90FD;&#x65E0;&#x6CD5;&#x6539;&#x53D8;&#x8FD9;&#x4E2A;&#x72B6;&#x6001;&#x3002;</li>
+<li><strong>&#x4E00;&#x65E6;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x5C31;&#x4E0D;&#x4F1A;&#x518D;&#x53D8;&#xFF0C;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#x90FD;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x8FD9;&#x4E2A;&#x7ED3;&#x679C;&#x3002;</strong> Promise &#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x53EA;&#x6709;&#x4E24;&#x79CD;&#x53EF;&#x80FD;&#xFF1A;&#x4ECE; Pending &#x53D8;&#x4E3A; Resolved &#x548C; &#x4ECE; Pending &#x53D8;&#x4E3A; Rejected&#x3002;&#x53EA;&#x8981;&#x5176;&#x4E2D;&#x4E4B;&#x4E00;&#x53D1;&#x751F;&#xFF0C;&#x72B6;&#x6001;&#x5C31;&#x51DD;&#x56FA;&#x4E86;&#xFF0C;&#x4E0D;&#x4F1A;&#x518D;&#x53D8;&#xFF0C;&#x4F1A;&#x4E00;&#x76F4;&#x4FDD;&#x6301;&#x8FD9;&#x4E2A;&#x7ED3;&#x679C;&#x3002;&#x5C31;&#x7B97;&#x6539;&#x53D8;&#x5DF2;&#x7ECF;&#x53D1;&#x751F;&#xFF0C;&#x4F60;&#x518D;&#x5BF9; Promise &#x5BF9;&#x8C61;&#x6DFB;&#x52A0;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x4E5F;&#x4F1A;&#x7ACB;&#x5373;&#x5F97;&#x5230;&#x8FD9;&#x4E2A;&#x7ED3;&#x679C;&#x3002;&#x8FD9;&#x4E0E;&#x4E8B;&#x4EF6;&#xFF08;Event&#xFF09;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#xFF0C;&#x4E8B;&#x4EF6;&#x7684;&#x7279;&#x70B9;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x9519;&#x8FC7;&#x4E86;&#x5B83;&#xFF0C;&#x518D;&#x53BB;&#x76D1;&#x542C;&#x662F;&#x5F97;&#x4E0D;&#x5230;&#x7ED3;&#x679C;&#x7684;&#x3002;</li>
+</ul>
+<p>Promise &#x4E5F;&#x6709;&#x4E00;&#x4E9B;&#x7F3A;&#x70B9;&#x3002;
+&#x9996;&#x5148;&#xFF0C;&#x65E0;&#x6CD5;&#x53D6;&#x6D88; Promise&#xFF0C;&#x4E00;&#x65E6;&#x65B0;&#x5EFA;&#x5B83;&#x5C31;&#x4F1A;&#x7ACB;&#x5373;&#x6267;&#x884C;&#xFF0C;&#x65E0;&#x6CD5;&#x4E2D;&#x9014;&#x53D6;&#x6D88;&#x3002;
+&#x5176;&#x6B21;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;Promise &#x5185;&#x90E8;&#x629B;&#x51FA;&#x7684;&#x9519;&#x8BEF;&#x4E0D;&#x4F1A;&#x53CD;&#x6620;&#x5230;&#x5916;&#x90E8;&#x3002;
+&#x518D;&#x8005;&#xFF0C;&#x5F53;&#x5904;&#x4E8E; Pending &#x72B6;&#x6001;&#x65F6;&#xFF0C;&#x65E0;&#x6CD5;&#x5F97;&#x77E5;&#x76EE;&#x524D;&#x8FDB;&#x5C55;&#x5230;&#x54EA;&#x4E00;&#x4E2A;&#x9636;&#x6BB5;&#xFF08;&#x521A;&#x521A;&#x5F00;&#x59CB;&#x8FD8;&#x662F;&#x5373;&#x5C06;&#x5B8C;&#x6210;&#xFF09;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x67D0;&#x4E9B;&#x4E8B;&#x4EF6;&#x4E0D;&#x65AD;&#x5730;&#x53CD;&#x590D;&#x53D1;&#x751F;&#xFF0C;&#x4E00;&#x822C;&#x8BF4;&#x6765;&#xFF0C;&#x4F7F;&#x7528; stream &#x6A21;&#x5F0F;&#x662F;&#x6BD4;&#x90E8;&#x7F72; Promise &#x66F4;&#x597D;&#x7684;&#x9009;&#x62E9;&#x3002;</p>
+<h2 id="&#x57FA;&#x672C;&#x7528;&#x6CD5;">&#x57FA;&#x672C;&#x7528;&#x6CD5;</h2>
+<p>ES6 &#x89C4;&#x5B9A;&#xFF0C;Promise &#x5BF9;&#x8C61;&#x662F;&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x6765;&#x751F;&#x6210; Promise &#x5B9E;&#x4F8B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> promise = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>( <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resolve, reject</span>) </span>{
+  <span class="hljs-comment">// ... some code</span>
+
+  <span class="hljs-keyword">if</span> (<span class="hljs-comment">/* &#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x6210;&#x529F; */</span>) {
+    resolve(value);
+  } <span class="hljs-keyword">else</span> {
+    reject(error);
+  }
+});
+</code></pre>
+<p>Promise &#x5B9E;&#x4F8B;&#x751F;&#x6210;&#x4EE5;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x7528; then &#x65B9;&#x6CD5;&#x5206;&#x522B;&#x6307;&#x5B9A; Resolved &#x72B6;&#x6001;&#x548C; Rejected &#x72B6;&#x6001;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript">promise.then(
+  <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value</span>) </span>{
+    <span class="hljs-comment">// success</span>
+  },
+  <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value</span>) </span>{
+    <span class="hljs-comment">// failure</span>
+  }
+);
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x7528; Promise &#x5BF9;&#x8C61;&#x5B9E;&#x73B0;&#x7684; AJAX &#x64CD;&#x4F5C;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> getJSON = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">url</span>) </span>{
+  <span class="hljs-keyword">var</span> promise = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resolve, reject</span>) </span>{
+    <span class="hljs-keyword">var</span> client = <span class="hljs-keyword">new</span> XMLHttpResqest();
+    client.open(<span class="hljs-string">&quot;GET&quot;</span>, url);
+    client.onreadystatechange = handler;
+    client.responseType = <span class="hljs-string">&quot;json&quot;</span>;
+    client.setRequestHeader(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>);
+    client.send();
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handler</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">if</span> ( <span class="hljs-keyword">this</span>.readyState !== <span class="hljs-number">4</span>) {
+        <span class="hljs-keyword">return</span>;
+      }
+      <span class="hljs-keyword">if</span> ( <span class="hljs-keyword">this</span>.status === <span class="hljs-number">200</span> ) {
+        resolve(<span class="hljs-keyword">this</span>.response);
+      } <span class="hljs-keyword">else</span> {
+        reject(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-keyword">this</span>.statusText));
+      }
+    }
+
+  });
+
+  <span class="hljs-keyword">return</span> promise;
+}
+
+getJSON(<span class="hljs-string">&quot;/posts.json&quot;</span>).then(
+  <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">json</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Contents: &apos;</span> + json);
+  },
+  <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">error</span>) </span>{
+    <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&apos;&#x51FA;&#x9519;&#x4E86;&apos;</span>, error);
+  }
+);
+</code></pre>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x732E;">&#x53C2;&#x8003;&#x6587;&#x732E;</h2>
+<p>P208</p>
+
                     
                     </section>
                 
@@ -1462,8 +1674,10 @@
         </div>
 
         
-        <a href="../Map/index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Map 类型"><i class="fa fa-angle-left"></i></a>
+        <a href="../Map/index.html" class="navigation navigation-prev " aria-label="Previous page: Map 类型"><i class="fa fa-angle-left"></i></a>
         
+        
+        <a href="../Promise/then.html" class="navigation navigation-next " aria-label="Next page: then()"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
