@@ -258,7 +258,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="webpack-loaders-and-plugins.html">
+        <li class="chapter " data-level="1.14" data-path="../redux-form/API.html">
+            
+                <a href="../redux-form/API.html">
+            
+                    
+                    redux-form - API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="webpack-loaders-and-plugins.html">
             
                 <a href="webpack-loaders-and-plugins.html">
             
@@ -271,7 +284,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.15" data-path="project-directory-structure.html">
+        <li class="chapter active" data-level="1.16" data-path="project-directory-structure.html">
             
                 <a href="project-directory-structure.html">
             
@@ -284,7 +297,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.16" data-path="../others/Fetch.html">
+        <li class="chapter " data-level="1.17" data-path="../others/Fetch.html">
             
                 <a href="../others/Fetch.html">
             
@@ -297,7 +310,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.17" data-path="../others/Storage.html">
+        <li class="chapter " data-level="1.18" data-path="../others/Storage.html">
             
                 <a href="../others/Storage.html">
             
@@ -310,7 +323,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.18" data-path="../others/Offline.html">
+        <li class="chapter " data-level="1.19" data-path="../others/Offline.html">
             
                 <a href="../others/Offline.html">
             
@@ -323,7 +336,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.19" data-path="../others/Closure.html">
+        <li class="chapter " data-level="1.20" data-path="../others/Closure.html">
             
                 <a href="../others/Closure.html">
             
@@ -336,7 +349,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.20" data-path="../others/this.html">
+        <li class="chapter " data-level="1.21" data-path="../others/this.html">
             
                 <a href="../others/this.html">
             
@@ -349,7 +362,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.21" data-path="../others/SPA.html">
+        <li class="chapter " data-level="1.22" data-path="../others/console.html">
+            
+                <a href="../others/console.html">
+            
+                    
+                    JavaScript - console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../others/SPA.html">
             
                 <a href="../others/SPA.html">
             
@@ -362,7 +388,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.22" data-path="../others/HTTP.html">
+        <li class="chapter " data-level="1.24" data-path="../others/HTTP.html">
             
                 <a href="../others/HTTP.html">
             
@@ -375,7 +401,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.23" data-path="../others/HTML-meta.html">
+        <li class="chapter " data-level="1.25" data-path="../others/HTML-meta.html">
             
                 <a href="../others/HTML-meta.html">
             
@@ -434,67 +460,62 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x8BF4;&#x660E;">&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x8BF4;&#x660E;</h1><pre><code class="lang-javascript">-
+- api <span class="hljs-comment">// &#x6A21;&#x62DF;&#x6570;&#x636E;&#x76EE;&#x5F55;</span>
+-   \- [filename].json
 - app <span class="hljs-comment">// &#x751F;&#x4EA7;&#x73AF;&#x5883;&#x76EE;&#x5F55;</span>
+  |- api
+  |    \- [filename].json
   |- resources
   |     |- js
-  |     |   |- vendor-hash.js
-  |     |   |- common-hash.js
+  |     |   |- vendor-[hash].js
+  |     |   |- index-[hash].js
   |     |   |- ...
-  |     |   \- projectName-hash.js
+  |     |   \- [id]-[hash].js
   |     |- css
-  |     |   |- vendor-hash.css
-  |     |   |- common-hash.css
+  |     |   |- vendor-[hash].css
+  |     |   |- index-[hash].css
   |     |   |- ...
-  |     |   \- projectName-hash.css
-  |     |- images
-  |     |   |- sprite-hash.svg (optional, <span class="hljs-number">1</span>)
-  |     |   |- sprite-hash.png (optional, <span class="hljs-number">3</span>)
-  |     |   |- ...
-  |     |   \- app-hash.png
-  |     \- fonts (optional, <span class="hljs-number">2</span>)
-  |         |- app-hash.ttf
-  |         |- app-hash.woff
-  |         |- apply-hash.eot
-  |         \- app-hash.svg
-  |- signup.html    <span class="hljs-comment">// &#x6CE8;&#x518C;&#x9875;</span>
-  |- signin.html    <span class="hljs-comment">// &#x767B;&#x5F55;&#x9875;</span>
-  |- <span class="hljs-number">404.</span>html       <span class="hljs-comment">// &#x672A;&#x627E;&#x5230;&#x9875;</span>
-  |- front.html     <span class="hljs-comment">// &#x767B;&#x5F55;&#x524D;&#x9996;&#x9875;</span>
+  |     |   \- [id]-[hash].css
+  |     \- images
+  |         |- ...
+  |         |- [filename]-[hash].svg
+  |         \- [filename]-[hash].png
   |- index.html     <span class="hljs-comment">// &#x767B;&#x5F55;&#x540E;&#x9996;&#x9875;&#xFF08;&#x5355;&#x9875;&#x5E94;&#x7528;&#x4E3B;&#x4F53;&#xFF09;</span>
   \- favicon.ico
 - src <span class="hljs-comment">// &#x5F00;&#x53D1;&#x73AF;&#x5883;&#x76EE;&#x5F55;</span>
   |- components <span class="hljs-comment">// &#x5C55;&#x793A;&#x7EC4;&#x4EF6;&#x76EE;&#x5F55;</span>
-  |     |- Cosyless
   |     |- Icon
-  |         |- js
-  |         |- less
-  |         \- (images|fonts)
   |     |- Button
-  |     |- Layout
   |     |- ...
-  |     \- Component
+  |     \- Index
   |         |- js
+  |         |   \- Index.js
   |         |- less
-  |         \- images  
+  |         |   \- index.less
+  |         \- images
+  |             |- ...
+  |             |- [filename].svg
+  |             \- [filename].png
   |- containers <span class="hljs-comment">// &#x5BB9;&#x5668;&#x7EC4;&#x4EF6;&#x76EE;&#x5F55;</span>
   |     |- ...
-  |     \- Component
-  |         \- js
-  |- reducers <span class="hljs-comment">// &#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x4EE3;&#x7801;&#x76EE;&#x5F55; - &#x8D1F;&#x8D23;&#x5904;&#x7406; action &#x7684; state &#x66F4;&#x65B0;</span>
+  |     |- App.js
+  |     \- Index.js
+  |- reducers <span class="hljs-comment">// Redux&#xFF08;&#x89C4;&#x5219;&#xFF09;&#x5B9A;&#x4E49;&#x76EE;&#x5F55; - &#x8D1F;&#x8D23;&#x63A5;&#x6536;&#x3001;&#x5904;&#x7406; action&#xFF0C;&#x8FD4;&#x56DE;&#x65B0;&#x7684; state</span>
   |     |- ...
   |     \- index.js <span class="hljs-comment">// &#x6839; Reducer</span>
-  |- Sagas  <span class="hljs-comment">// &#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x4EE3;&#x7801;&#x76EE;&#x5F55; - &#x8D1F;&#x8D23;&#x534F;&#x8C03;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x76EE;&#x5F55;</span>
+  |- actions <span class="hljs-comment">// Redux&#xFF08;&#x52A8;&#x4F5C;&#xFF09;&#x5B9A;&#x4E49;&#x76EE;&#x5F55; - &#x5B9A;&#x4E49; action &#x53CA;&#x9700;&#x8981;&#x643A;&#x5E26;&#x7684;&#x6570;&#x636E;</span>
+  |     \- ...
+  |- sagas  <span class="hljs-comment">// &#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x4EE3;&#x7801;&#x76EE;&#x5F55; - &#x8D1F;&#x8D23;&#x534F;&#x8C03;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x76EE;&#x5F55;</span>
   |     |- ...
   |     \- index.js <span class="hljs-comment">// &#x6839; Sagas</span>
-  |- actions <span class="hljs-comment">// Redux&#xFF08;&#x89E6;&#x53D1;&#x5668;&#xFF09;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;</span>
-  |     |- ...
-  |     \- index.js <span class="hljs-comment">// &#x6839; Action</span>
-  |- api <span class="hljs-comment">// Redux Store &#x6A21;&#x62DF;&#x6570;&#x636E;&#x63A5;&#x53E3;&#x76EE;&#x5F55;</span>
-  |     |- moduleA
-  |     |     \- data.json
-  |     \- moduleB
-  |           \- data.json
-  |- configureStore.js  <span class="hljs-comment">// &#x5E94;&#x7528;&#x7A0B;&#x5E8F; Store &#x914D;&#x7F6E;&#x6587;&#x4EF6;</span>
+  |- store  <span class="hljs-comment">// &#x6570;&#x636E;&#x5B58;&#x50A8;&#x76EE;&#x5F55;</span>
+  |     |- initialState.js
+  |     \- configureStore.js <span class="hljs-comment">// &#x5E94;&#x7528;&#x7A0B;&#x5E8F; Store &#x914D;&#x7F6E;&#x6587;&#x4EF6;</span>
+  |- utils  <span class="hljs-comment">// &#x5B9E;&#x7528;&#x5DE5;&#x5177;</span>
+  |     |- FL.js
+  |     |- interceptor.js
+  |     |- localStorage.js
+  |     \- auth.js
   |- index.js <span class="hljs-comment">// &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6839;&#xFF08;&#x6DF7;&#x5408;&#x5C55;&#x793A;&#x7EC4;&#x4EF6;&#x3001;&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;&#x3001;Store&#x3001;API&#xFF09;</span>
   |- index.ejs <span class="hljs-comment">// HTML &#x6587;&#x4EF6;&#x6A21;&#x677F;</span>
   \- favicon.ico</code></pre>
@@ -541,7 +562,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"webpack - project-directory-structure","level":"1.15","depth":1,"next":{"title":"JavaScript - Fetch","level":"1.16","depth":1,"path":"others/Fetch.md","ref":"others//Fetch.md","articles":[]},"previous":{"title":"webpack - webpack-loaders-and-plugins","level":"1.14","depth":1,"path":"webpack/webpack-loaders-and-plugins.md","ref":"webpack//webpack-loaders-and-plugins.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"webpack/project-directory-structure.md","mtime":"2016-09-11T13:36:29.149Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-12T01:05:22.398Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"webpack - project-directory-structure","level":"1.16","depth":1,"next":{"title":"JavaScript - Fetch","level":"1.17","depth":1,"path":"others/Fetch.md","ref":"others//Fetch.md","articles":[]},"previous":{"title":"webpack - webpack-loaders-and-plugins","level":"1.15","depth":1,"path":"webpack/webpack-loaders-and-plugins.md","ref":"webpack//webpack-loaders-and-plugins.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"webpack/project-directory-structure.md","mtime":"2016-09-24T16:21:15.465Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-24T16:23:51.122Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

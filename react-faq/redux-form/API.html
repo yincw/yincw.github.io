@@ -1,0 +1,807 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>redux-form - API · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../webpack/webpack-loaders-and-plugins.html" />
+    
+    
+    <link rel="prev" href="../redux-saga/use.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../react/API.html">
+            
+                <a href="../react/API.html">
+            
+                    
+                    react - API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../react/use.html">
+            
+                <a href="../react/use.html">
+            
+                    
+                    react - use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../react-router/API.html">
+            
+                <a href="../react-router/API.html">
+            
+                    
+                    react-router - API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../react-router/use.html">
+            
+                <a href="../react-router/use.html">
+            
+                    
+                    react-router - use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../react-router-redux/API.html">
+            
+                <a href="../react-router-redux/API.html">
+            
+                    
+                    react-router-redux - API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../react-router-redux/use.html">
+            
+                <a href="../react-router-redux/use.html">
+            
+                    
+                    react-router-redux - use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../react-redux/API.html">
+            
+                <a href="../react-redux/API.html">
+            
+                    
+                    react-redux - API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../react-redux/use.html">
+            
+                <a href="../react-redux/use.html">
+            
+                    
+                    react-redux - use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../redux/API.html">
+            
+                <a href="../redux/API.html">
+            
+                    
+                    redux - API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../redux/use.html">
+            
+                <a href="../redux/use.html">
+            
+                    
+                    redux - use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../redux-saga/API.html">
+            
+                <a href="../redux-saga/API.html">
+            
+                    
+                    redux-saga - API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../redux-saga/use.html">
+            
+                <a href="../redux-saga/use.html">
+            
+                    
+                    redux-saga - use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="API.html">
+            
+                <a href="API.html">
+            
+                    
+                    redux-form - API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../webpack/webpack-loaders-and-plugins.html">
+            
+                <a href="../webpack/webpack-loaders-and-plugins.html">
+            
+                    
+                    webpack - webpack-loaders-and-plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../webpack/project-directory-structure.html">
+            
+                <a href="../webpack/project-directory-structure.html">
+            
+                    
+                    webpack - project-directory-structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../others/Fetch.html">
+            
+                <a href="../others/Fetch.html">
+            
+                    
+                    JavaScript - Fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../others/Storage.html">
+            
+                <a href="../others/Storage.html">
+            
+                    
+                    JavaScript - Storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../others/Offline.html">
+            
+                <a href="../others/Offline.html">
+            
+                    
+                    JavaScript - Offline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../others/Closure.html">
+            
+                <a href="../others/Closure.html">
+            
+                    
+                    JavaScript - Closure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../others/this.html">
+            
+                <a href="../others/this.html">
+            
+                    
+                    JavaScript - this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../others/console.html">
+            
+                <a href="../others/console.html">
+            
+                    
+                    JavaScript - console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../others/SPA.html">
+            
+                <a href="../others/SPA.html">
+            
+                    
+                    SPA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../others/HTTP.html">
+            
+                <a href="../others/HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../others/HTML-meta.html">
+            
+                <a href="../others/HTML-meta.html">
+            
+                    
+                    HTML - meta
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >redux-form - API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="redux-form">Redux Form</h1><blockquote><p>&quot;redux-form&quot;: &quot;^6.0.5&quot;</p></blockquote><ul><li><code>&lt;Field&gt;</code>
+</li>
+<li><code>&lt;Fields&gt;</code>
+</li>
+<li><code>&lt;FieldArray&gt;</code>
+</li>
+<li><code>SubmissionError()</code>
+</li>
+<li><code>formValueSelector()</code>
+</li>
+<li><code>reduxForm()</code>
+</li></ul>
+<h2 id="field"><code>&lt;Field&gt;</code></h2><p><a href="http://redux-form.com/6.0.2/docs/api/Field.md/" target="_blank">http://redux-form.com/6.0.2/docs/api/Field.md/</a></p><table>
+<thead>
+<tr><th>&#x5C5E;&#x6027;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr></thead><tbody>
+<tr><td>component</td>
+<td>HTML &#x5143;&#x7D20;&#xFF0C;&#x53EF;&#x9009;&#x503C;&#xFF1A;input, textarea, select</td>
+<td>string</td>
+<td>-</td>
+</tr><tr><td>type</td>
+<td>HTML input &#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x9009;&#x503C;&#xFF1A;text, password, radio, checkbox, email, number, ...</td>
+<td>string</td>
+<td>-</td>
+</tr><tr><td>name</td>
+<td>-</td>
+<td>string</td>
+<td>-</td>
+</tr><tr><td>value</td>
+<td>-</td>
+<td>string</td>
+<td>-</td>
+</tr><tr><td>id</td>
+<td>-</td>
+<td>string</td>
+<td>-</td>
+</tr><tr><td>placeholder</td>
+<td>-</td>
+<td>string</td>
+<td>-</td>
+</tr><tr><td>normalize</td>
+<td>&#x6807;&#x51C6;&#x5316;</td>
+<td>function</td>
+<td>bound normalize()</td>
+</tr></tbody></table>
+
+<h2 id="fields"><code>&lt;Fields&gt;</code></h2><p><a href="http://redux-form.com/6.0.2/docs/api/Fields.md/" target="_blank">http://redux-form.com/6.0.2/docs/api/Fields.md/</a></p><h2 id="fieldarray"><code>&lt;FieldArray&gt;</code></h2><p><a href="http://redux-form.com/6.0.2/docs/api/FieldArray.md/" target="_blank">http://redux-form.com/6.0.2/docs/api/FieldArray.md/</a></p><table>
+<thead>
+<tr><th>&#x5C5E;&#x6027;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr></thead><tbody>
+<tr><td>component</td>
+<td>HTML &#x5143;&#x7D20;&#xFF0C;&#x53EF;&#x9009;&#x503C;&#xFF1A;input, textarea, select</td>
+<td>string</td>
+<td>-</td>
+</tr></tbody></table>
+
+<h2 id="submissionerror"><code>SubmissionError()</code></h2><p><a href="http://redux-form.com/6.0.2/docs/api/SubmissionError.md/" target="_blank">http://redux-form.com/6.0.2/docs/api/SubmissionError.md/</a></p><h2 id="formvalueselector"><code>formValueSelector()</code></h2><p><a href="http://redux-form.com/6.0.2/docs/api/FormValueSelector.md/" target="_blank">http://redux-form.com/6.0.2/docs/api/FormValueSelector.md/</a></p><h2 id="reduxform"><code>reduxForm()</code></h2><p><a href="http://redux-form.com/6.0.2/docs/api/ReduxForm.md/" target="_blank">http://redux-form.com/6.0.2/docs/api/ReduxForm.md/</a></p><blockquote><p>&#x8868;&#x5355;&#x63A5;&#x53E3;</p></blockquote><table>
+<thead>
+<tr><th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>form</td>
+<td>string</td>
+<td>-</td>
+<td>&#x8868;&#x5355;&#x552F;&#x4E00;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;<strong>&#x5FC5;&#x987B;&#x9879;</strong></td>
+</tr><tr><td>pure</td>
+<td>boolean</td>
+<td>true</td>
+<td>&#x7EAF;&#x7684;</td>
+</tr><tr><td>initialValues</td>
+<td>object</td>
+<td>{}</td>
+<td>&#x521D;&#x59CB;&#x5316;&#x503C;</td>
+</tr><tr><td>enableReinitialize</td>
+<td>boolean</td>
+<td>false</td>
+<td>&#x542F;&#x7528;&#x91CD;&#x65B0;&#x521D;&#x59CB;&#x5316;</td>
+</tr><tr><td>keepDirtyOnReinitialize</td>
+<td>boolean</td>
+<td>false</td>
+<td>&#x8868;&#x5355;&#x91CD;&#x65B0;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x5C06;&#x4FDD;&#x7559;&#x810F;&#x7684;&#x5B57;&#x6BB5;&#x7684;&#x503C;</td>
+</tr><tr><td>destroyOnUnmount</td>
+<td>boolean</td>
+<td>true</td>
+<td>&#x7EC4;&#x5EFA;&#x5378;&#x8F7D;&#x65F6;&#x9500;&#x6BC1;</td>
+</tr><tr><td>getFormState</td>
+<td>function</td>
+<td>fn()</td>
+<td>&#x83B7;&#x5F97;&#x8868;&#x5355;&#x72B6;&#x6001;</td>
+</tr><tr><td>propNamespace</td>
+<td>string</td>
+<td>-</td>
+<td>&#x5C5E;&#x6027;&#x547D;&#x540D;&#x7A7A;&#x95F4;</td>
+</tr><tr><td>shouldAsyncValidate</td>
+<td>boolean</td>
+<td>-</td>
+<td>-</td>
+</tr><tr><td>touchOnBlur</td>
+<td>boolean</td>
+<td>true</td>
+<td>-</td>
+</tr><tr><td>touchOnChange</td>
+<td>boolean</td>
+<td>false</td>
+<td>-</td>
+</tr></tbody></table>
+
+<blockquote><p>&#x4E8B;&#x4EF6;&#x63A5;&#x53E3;</p></blockquote><table>
+<thead>
+<tr><th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>handleSubmit</td>
+<td>function</td>
+<td>bound submit()</td>
+<td>&#x5904;&#x7406;&#x8868;&#x5355; submit()</td>
+</tr><tr><td>onSubmit</td>
+<td>function</td>
+<td>fn()</td>
+<td>&#x8868;&#x5355;&#x63D0;&#x4EA4;</td>
+</tr><tr><td>submitting</td>
+<td>boolean</td>
+<td>false</td>
+<td>&#x63D0;&#x4EA4;</td>
+</tr><tr><td>onSubmitFail</td>
+<td>function</td>
+<td>fn(errors, dispatch)</td>
+<td>&#x8868;&#x5355;&#x63D0;&#x4EA4;&#x9519;&#x8BEF;</td>
+</tr><tr><td>submitFailed</td>
+<td>boolean</td>
+<td>false</td>
+<td>&#x63D0;&#x4EA4;&#x5931;&#x8D25;</td>
+</tr><tr><td>onSubmitSuccess</td>
+<td>function</td>
+<td>fn(result, dispatch)</td>
+<td>&#x8868;&#x5355;&#x63D0;&#x4EA4;&#x6210;&#x529F;</td>
+</tr><tr><td>submitSucceeded</td>
+<td>boolean</td>
+<td>false</td>
+<td>&#x63D0;&#x4EA4;&#x6210;&#x529F;</td>
+</tr><tr><td>initialize</td>
+<td>function</td>
+<td>fn()</td>
+<td>&#x521D;&#x59CB;&#x5316;</td>
+</tr><tr><td>initialized</td>
+<td>boolean</td>
+<td>false</td>
+<td>&#x521D;&#x59CB;&#x5316;&#x7684;</td>
+</tr><tr><td>destroy</td>
+<td>function</td>
+<td>fn()</td>
+<td>&#x9500;&#x6BC1;</td>
+</tr><tr><td>blur</td>
+<td>function</td>
+<td>fn()</td>
+<td>&#x6A21;&#x7CCA;</td>
+</tr><tr><td>change</td>
+<td>function</td>
+<td>fn()</td>
+<td>&#x6539;&#x53D8;</td>
+</tr><tr><td>autofill</td>
+<td>function</td>
+<td>fn()</td>
+<td>&#x81EA;&#x52A8;&#x586B;&#x5145;</td>
+</tr><tr><td>touch</td>
+<td>function</td>
+<td>fn()</td>
+<td>&#x89E6;&#x6478;</td>
+</tr><tr><td>untouch</td>
+<td>function</td>
+<td>fn()</td>
+<td>&#x4E0D;&#x53EF;&#x89E6;&#x6478;</td>
+</tr><tr><td>anyTouched</td>
+<td>boolean</td>
+<td>false</td>
+<td>&#x4EFB;&#x4F55;&#x63A5;&#x89E6;</td>
+</tr></tbody></table>
+
+<blockquote><p>&#x9A8C;&#x8BC1;&#x63A5;&#x53E3;</p></blockquote><table>
+<thead>
+<tr><th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>validate</td>
+<td>function</td>
+<td><code>(values, props) =&gt; ({})</code></td>
+<td>&#x540C;&#x6B65;&#x9A8C;&#x8BC1;&#x51FD;&#x6570;&#x7684;&#x503C;&#x548C; &#x5C5E;&#x6027; &#x4F20;&#x9012;&#x5230;&#x4F60;&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x9A8C;&#x8BC1;&#x901A;&#x8FC7;&#xFF0C;&#x8FD4;&#x56DE; <code>{}</code>, &#x5982;&#x679C;&#x9A8C;&#x8BC1;&#x4E0D;&#x901A;&#x8FC7;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9A8C;&#x8BC1;&#x9519;&#x8BEF; <code>{ field1: &lt;String&gt;, field2: &lt;String&gt; }</code>&#x3002;</td>
+</tr><tr><td>asyncBlurFields</td>
+<td>array</td>
+<td>[]</td>
+<td>&#x5305;&#x542B;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#x5728;&#x89E6;&#x53D1; onBlur &#x65F6;&#x4F1A;&#x8C03;&#x7528; asyncValidate &#x51FD;&#x6570;</td>
+</tr><tr><td>asyncValidate</td>
+<td>function</td>
+<td>bound asyncValidate()</td>
+<td>&#x5F02;&#x6B65;&#x9A8C;&#x8BC1;</td>
+</tr><tr><td>dispatch</td>
+<td>function</td>
+<td>fn()</td>
+<td>&#x6D3E;&#x9063;</td>
+</tr><tr><td>asyncValidating</td>
+<td>boolean</td>
+<td>false</td>
+<td>&#x5F02;&#x6B65;&#x9A8C;&#x8BC1;</td>
+</tr></tbody></table>
+
+<blockquote><p>&#x5B9E;&#x4F8B; API</p></blockquote><table>
+<thead>
+<tr><th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>dirty</td>
+<td>boolean</td>
+<td>false</td>
+<td>&#x5F53;&#x5F53;&#x524D;&#x8868;&#x5355;&#x7684;&#x503C;&#x4E0E; initialValues &#x4E0D;&#x540C;&#x65F6;&#x4E3A; true&#xFF0C;&#x5426;&#x5219;&#x4E3A; false</td>
+</tr><tr><td>pristine</td>
+<td>boolean</td>
+<td>true</td>
+<td>&#x5F53;&#x5F53;&#x524D;&#x8868;&#x5355;&#x7684;&#x503C;&#x4E0E; initialValues &#x76F8;&#x540C;&#x65F6;&#x4E3A; true&#xFF0C;&#x5426;&#x5219;&#x4E3A; false</td>
+</tr><tr><td>submit</td>
+<td>Promise</td>
+<td>-</td>
+<td>&#x63D0;&#x4EA4;&#x8868;&#x5355;</td>
+</tr><tr><td>reset</td>
+<td>function</td>
+<td>fn()</td>
+<td>&#x91CD;&#x7F6E;&#x8868;&#x5355;&#x5230; initialValues&#xFF0C;&#x91CD;&#x7F6E;&#x4E4B;&#x540E;&#x5C06;&#x56DE;&#x5230; pristine</td>
+</tr><tr><td>invalid</td>
+<td>boolean</td>
+<td>false</td>
+<td>&#x5F53;&#x8868;&#x5355;&#x65E0;&#x6548;&#xFF08;&#x6709;&#x9A8C;&#x8BC1;&#x9519;&#x8BEF;&#xFF09;&#x65F6;&#x4E3A; true&#xFF0C;&#x5426;&#x5219;&#x4E3A; false</td>
+</tr><tr><td>valid</td>
+<td>boolean</td>
+<td>true</td>
+<td>&#x5F53;&#x8868;&#x5355;&#x6709;&#x6548;&#xFF08;&#x6CA1;&#x6709;&#x9A8C;&#x8BC1;&#x9519;&#x8BEF;&#xFF09;&#x65F6;&#x4E3A; true&#xFF0C;&#x5426;&#x5219;&#x4E3A; false</td>
+</tr><tr><td>values</td>
+<td>object</td>
+<td>-</td>
+<td>&#x8868;&#x5355;&#x4E2D;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#x7684;&#x5F53;&#x524D;&#x503C;</td>
+</tr><tr><td>registeredFields</td>
+<td>array</td>
+<td>-</td>
+<td>&#x6BCF;&#x4E2A;&#x7531; name &#x548C; type &#x5B57;&#x6BB5;&#x4EE3;&#x8868;&#x8868;&#x5355;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#x7EC4;&#x6210;&#x7684;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#x3002;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6D4B;&#x8BD5;&#x3002;</td>
+</tr><tr><td>wrappedInstance</td>
+<td>-</td>
+<td>ReactElement</td>
+<td>&#x5BF9;&#x7EC4;&#x4EF6;&#x5B9E;&#x4F8B;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x88C5;&#x9970;&#x4E8E; reduxForm()&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6D4B;&#x8BD5;&#x3002;</td>
+</tr></tbody></table>
+
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../redux-saga/use.html" class="navigation navigation-prev " aria-label="Previous page: redux-saga - use">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../webpack/webpack-loaders-and-plugins.html" class="navigation navigation-next " aria-label="Next page: webpack - webpack-loaders-and-plugins">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"redux-form - API","level":"1.14","depth":1,"next":{"title":"webpack - webpack-loaders-and-plugins","level":"1.15","depth":1,"path":"webpack/webpack-loaders-and-plugins.md","ref":"webpack//webpack-loaders-and-plugins.md","articles":[]},"previous":{"title":"redux-saga - use","level":"1.13","depth":1,"path":"redux-saga/use.md","ref":"redux-saga//use.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"redux-form/API.md","mtime":"2016-09-21T15:03:31.126Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-24T16:23:51.122Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
